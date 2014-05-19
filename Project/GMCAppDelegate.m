@@ -34,7 +34,7 @@ static NSDictionary* notificationData = nil;
     
     // Navigation controller
     GMCMainViewController *mainViewController = [[GMCMainViewController alloc] initWithNibName:@"GMCMainViewController" bundle:nil];
-    //UINavigationController* controller = [[UINavigationController alloc] initWithRootViewController:loadingViewController];
+    //UINavigationController* controller = [[UINavigationController alloc] initWithRootViewController:mainViewController];
     //[controller setNavigationBarHidden:TRUE];
     self.window.rootViewController = mainViewController;
     [self.window makeKeyAndVisible];

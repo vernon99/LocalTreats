@@ -7,10 +7,8 @@
 //
 
 #import "GMCMainViewController.h"
-
-@interface GMCMainViewController ()
-
-@end
+#import "GMCVenueLoader.h"
+#import "GMCVenueCard.h"
 
 @implementation GMCMainViewController
 
@@ -26,7 +24,28 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    [_activityIndicator startAnimating];
+    [GMCVenueLoader loadVenueListWithTarget:self andSelector:@selector(venuesLoaded:)];
+}
+
+- (void)venuesLoaded:(NSArray*)venues
+{
+    [_activityIndicator stopAnimating];
+    if ( venues && venues.count > 0 )
+    {
+        GMCVenue* bestVenue = nil;
+        for ( GMCVenue* venue in venues )
+            if ( ! bestVenue || [bestVenue.venueRating floatValue] < [venue.venueRating floatValue] )
+                bestVenue = venue;
+        GMCVenueCard* card = [GMCVenueCard cardWithVenue:bestVenue];
+        card.origin = CGPointMake(10, 30);
+        [self.view addSubview:card];
+    }
+    else
+    {
+        // TODO: show nothing nearby or try to reload for better
+    }
 }
 
 - (void)didReceiveMemoryWarning

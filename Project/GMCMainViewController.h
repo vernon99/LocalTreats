@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface GMCMainViewController : UIViewController
+{
+    IBOutlet UIActivityIndicatorView *_activityIndicator;
+    
+}
 
 @end

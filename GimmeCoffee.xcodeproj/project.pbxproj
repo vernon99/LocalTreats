@@ -19,15 +19,9 @@
 		09ABC08213A1D52D009C3FCF /* GMCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09ABC08113A1D52D009C3FCF /* GMCAppDelegate.m */; };
 		09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09BEF34B13D51C3F001BBCDB /* Security.framework */; };
 		2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FCDD6AF14A573F500295AAC /* QuartzCore.framework */; };
-		471EAC5C16C0D419009F88F9 /* Foursquare2.m in Sources */ = {isa = PBXBuildFile; fileRef = 471EAC5216C0D3E0009F88F9 /* Foursquare2.m */; };
-		471EAC5D16C0D42C009F88F9 /* FSRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 471EAC5416C0D3E0009F88F9 /* FSRequester.m */; };
-		471EAC5E16C0D42F009F88F9 /* FSTargetCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 471EAC5616C0D3E0009F88F9 /* FSTargetCallback.m */; };
-		471EAC5F16C0D432009F88F9 /* FSWebLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 471EAC5816C0D3E0009F88F9 /* FSWebLogin.m */; };
-		471EAC6016C0D435009F88F9 /* FSWebLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 471EAC5916C0D3E0009F88F9 /* FSWebLogin.xib */; };
-		471EAC6116C0D43A009F88F9 /* poweredByFoursquare_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 471EAC5A16C0D3E0009F88F9 /* poweredByFoursquare_gray.png */; };
-		471EAC6216C0D43A009F88F9 /* poweredByFoursquare_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 471EAC5B16C0D3E0009F88F9 /* poweredByFoursquare_gray@2x.png */; };
-		476D1E2316A8273600077458 /* FSVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 476D1E2216A8273600077458 /* FSVenue.m */; };
 		4C057322166AE74D00EF6FAD /* FacebookLogin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C057321166AE74D00EF6FAD /* FacebookLogin.png */; };
+		4C0F449B1929B08A0069B254 /* GMCVenueCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C0F449A1929B08A0069B254 /* GMCVenueCard.m */; };
+		4C0F449D1929B09F0069B254 /* GMCVenueCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F449C1929B09F0069B254 /* GMCVenueCard.xib */; };
 		4C188D251698C72C004CF42D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C188D241698C72B004CF42D /* MapKit.framework */; };
 		4C3ACECA180B2A9F00DC0CEE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3ACEC9180B2A9F00DC0CEE /* MessageUI.framework */; };
 		4C4228E716C46B62008EBA67 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4228E516C46B62008EBA67 /* EventKit.framework */; };
@@ -44,6 +38,18 @@
 		4C9BB09419299AB70098B2C8 /* GMCVenueLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BB09319299AB70098B2C8 /* GMCVenueLoader.m */; };
 		4C9BB09819299CE20098B2C8 /* GMCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BB09619299CE20098B2C8 /* GMCMainViewController.m */; };
 		4C9BB09919299CE20098B2C8 /* GMCMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9BB09719299CE20098B2C8 /* GMCMainViewController.xib */; };
+		4C9BB0AF1929A0020098B2C8 /* Foursquare2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BB09B1929A0020098B2C8 /* Foursquare2.m */; };
+		4C9BB0B01929A0020098B2C8 /* FSConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BB09D1929A0020098B2C8 /* FSConverter.m */; };
+		4C9BB0B11929A0020098B2C8 /* FSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BB09F1929A0020098B2C8 /* FSKeychain.m */; };
+		4C9BB0B21929A0020098B2C8 /* FSOAuthNoAppStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BB0A11929A0020098B2C8 /* FSOAuthNoAppStore.m */; };
+		4C9BB0B31929A0020098B2C8 /* FSOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BB0A31929A0020098B2C8 /* FSOperation.m */; };
+		4C9BB0B41929A0020098B2C8 /* FSRequester.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BB0A51929A0020098B2C8 /* FSRequester.m */; };
+		4C9BB0B51929A0020098B2C8 /* FSTargetCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BB0A71929A0020098B2C8 /* FSTargetCallback.m */; };
+		4C9BB0B61929A0020098B2C8 /* FSVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BB0A91929A0020098B2C8 /* FSVenue.m */; };
+		4C9BB0B71929A0020098B2C8 /* FSWebLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C9BB0AB1929A0020098B2C8 /* FSWebLogin.m */; };
+		4C9BB0B81929A0020098B2C8 /* FSWebLogin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C9BB0AC1929A0020098B2C8 /* FSWebLogin.xib */; };
+		4C9BB0B91929A0020098B2C8 /* poweredByFoursquare_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9BB0AD1929A0020098B2C8 /* poweredByFoursquare_gray.png */; };
+		4C9BB0BA1929A0020098B2C8 /* poweredByFoursquare_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9BB0AE1929A0020098B2C8 /* poweredByFoursquare_gray@2x.png */; };
 		4C9D1B5317A6A098007B0FEA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C9D1B5217A6A098007B0FEA /* Localizable.strings */; };
 		4CB46D8118D14AAE00BBED30 /* ULLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB46D8018D14AAE00BBED30 /* ULLocationManager.m */; };
 		4CB46D8418D14E6000BBED30 /* GMCGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB46D8318D14E6000BBED30 /* GMCGlobal.m */; };
@@ -82,21 +88,11 @@
 		09ABC08113A1D52D009C3FCF /* GMCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMCAppDelegate.m; sourceTree = "<group>"; };
 		09BEF34B13D51C3F001BBCDB /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		2FCDD6AF14A573F500295AAC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		471EAC5116C0D3E0009F88F9 /* Foursquare2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foursquare2.h; sourceTree = "<group>"; };
-		471EAC5216C0D3E0009F88F9 /* Foursquare2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Foursquare2.m; sourceTree = "<group>"; };
-		471EAC5316C0D3E0009F88F9 /* FSRequester.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSRequester.h; sourceTree = "<group>"; };
-		471EAC5416C0D3E0009F88F9 /* FSRequester.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSRequester.m; sourceTree = "<group>"; };
-		471EAC5516C0D3E0009F88F9 /* FSTargetCallback.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSTargetCallback.h; sourceTree = "<group>"; };
-		471EAC5616C0D3E0009F88F9 /* FSTargetCallback.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSTargetCallback.m; sourceTree = "<group>"; };
-		471EAC5716C0D3E0009F88F9 /* FSWebLogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSWebLogin.h; sourceTree = "<group>"; };
-		471EAC5816C0D3E0009F88F9 /* FSWebLogin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSWebLogin.m; sourceTree = "<group>"; };
-		471EAC5916C0D3E0009F88F9 /* FSWebLogin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FSWebLogin.xib; sourceTree = "<group>"; };
-		471EAC5A16C0D3E0009F88F9 /* poweredByFoursquare_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredByFoursquare_gray.png; sourceTree = "<group>"; };
-		471EAC5B16C0D3E0009F88F9 /* poweredByFoursquare_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poweredByFoursquare_gray@2x.png"; sourceTree = "<group>"; };
-		476D1E2116A8273500077458 /* FSVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FSVenue.h; path = ../../Project/FSVenue.h; sourceTree = "<group>"; };
-		476D1E2216A8273600077458 /* FSVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FSVenue.m; path = ../../Project/FSVenue.m; sourceTree = "<group>"; };
 		4C02D35C17B12906008E19EB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		4C057321166AE74D00EF6FAD /* FacebookLogin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FacebookLogin.png; path = resources/FacebookLogin.png; sourceTree = "<group>"; };
+		4C0F44991929B08A0069B254 /* GMCVenueCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCVenueCard.h; sourceTree = "<group>"; };
+		4C0F449A1929B08A0069B254 /* GMCVenueCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMCVenueCard.m; sourceTree = "<group>"; };
+		4C0F449C1929B09F0069B254 /* GMCVenueCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMCVenueCard.xib; sourceTree = "<group>"; };
 		4C188D241698C72B004CF42D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4C3ACEC9180B2A9F00DC0CEE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		4C4228E516C46B62008EBA67 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
@@ -115,6 +111,27 @@
 		4C9BB09519299CE20098B2C8 /* GMCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCMainViewController.h; sourceTree = "<group>"; };
 		4C9BB09619299CE20098B2C8 /* GMCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMCMainViewController.m; sourceTree = "<group>"; };
 		4C9BB09719299CE20098B2C8 /* GMCMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMCMainViewController.xib; sourceTree = "<group>"; };
+		4C9BB09A1929A0020098B2C8 /* Foursquare2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foursquare2.h; sourceTree = "<group>"; };
+		4C9BB09B1929A0020098B2C8 /* Foursquare2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foursquare2.m; sourceTree = "<group>"; };
+		4C9BB09C1929A0020098B2C8 /* FSConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSConverter.h; sourceTree = "<group>"; };
+		4C9BB09D1929A0020098B2C8 /* FSConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSConverter.m; sourceTree = "<group>"; };
+		4C9BB09E1929A0020098B2C8 /* FSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSKeychain.h; sourceTree = "<group>"; };
+		4C9BB09F1929A0020098B2C8 /* FSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSKeychain.m; sourceTree = "<group>"; };
+		4C9BB0A01929A0020098B2C8 /* FSOAuthNoAppStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSOAuthNoAppStore.h; sourceTree = "<group>"; };
+		4C9BB0A11929A0020098B2C8 /* FSOAuthNoAppStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOAuthNoAppStore.m; sourceTree = "<group>"; };
+		4C9BB0A21929A0020098B2C8 /* FSOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSOperation.h; sourceTree = "<group>"; };
+		4C9BB0A31929A0020098B2C8 /* FSOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSOperation.m; sourceTree = "<group>"; };
+		4C9BB0A41929A0020098B2C8 /* FSRequester.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSRequester.h; sourceTree = "<group>"; };
+		4C9BB0A51929A0020098B2C8 /* FSRequester.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSRequester.m; sourceTree = "<group>"; };
+		4C9BB0A61929A0020098B2C8 /* FSTargetCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSTargetCallback.h; sourceTree = "<group>"; };
+		4C9BB0A71929A0020098B2C8 /* FSTargetCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSTargetCallback.m; sourceTree = "<group>"; };
+		4C9BB0A81929A0020098B2C8 /* FSVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSVenue.h; sourceTree = "<group>"; };
+		4C9BB0A91929A0020098B2C8 /* FSVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSVenue.m; sourceTree = "<group>"; };
+		4C9BB0AA1929A0020098B2C8 /* FSWebLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSWebLogin.h; sourceTree = "<group>"; };
+		4C9BB0AB1929A0020098B2C8 /* FSWebLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSWebLogin.m; sourceTree = "<group>"; };
+		4C9BB0AC1929A0020098B2C8 /* FSWebLogin.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FSWebLogin.xib; sourceTree = "<group>"; };
+		4C9BB0AD1929A0020098B2C8 /* poweredByFoursquare_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredByFoursquare_gray.png; sourceTree = "<group>"; };
+		4C9BB0AE1929A0020098B2C8 /* poweredByFoursquare_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poweredByFoursquare_gray@2x.png"; sourceTree = "<group>"; };
 		4C9D1B5217A6A098007B0FEA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = resources/Localizable.strings; sourceTree = "<group>"; };
 		4CB46D7F18D14AAE00BBED30 /* ULLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ULLocationManager.h; path = ../UnitedLibs/ULLocationManager.h; sourceTree = "<group>"; };
 		4CB46D8018D14AAE00BBED30 /* ULLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ULLocationManager.m; path = ../UnitedLibs/ULLocationManager.m; sourceTree = "<group>"; };
@@ -236,6 +253,7 @@
 		09ABC07713A1D52D009C3FCF /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				09ABC07813A1D52D009C3FCF /* Supporting Files */,
 				4CD2683F1798685F003B0FB8 /* GMCParams.h */,
 				09ABC08013A1D52D009C3FCF /* GMCAppDelegate.h */,
 				09ABC08113A1D52D009C3FCF /* GMCAppDelegate.m */,
@@ -248,7 +266,9 @@
 				4C9BB09519299CE20098B2C8 /* GMCMainViewController.h */,
 				4C9BB09619299CE20098B2C8 /* GMCMainViewController.m */,
 				4C9BB09719299CE20098B2C8 /* GMCMainViewController.xib */,
-				09ABC07813A1D52D009C3FCF /* Supporting Files */,
+				4C0F44991929B08A0069B254 /* GMCVenueCard.h */,
+				4C0F449A1929B08A0069B254 /* GMCVenueCard.m */,
+				4C0F449C1929B09F0069B254 /* GMCVenueCard.xib */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -277,19 +297,27 @@
 		47534D8516A6F8DC008CC823 /* Foursquare2 */ = {
 			isa = PBXGroup;
 			children = (
-				476D1E2116A8273500077458 /* FSVenue.h */,
-				476D1E2216A8273600077458 /* FSVenue.m */,
-				471EAC5116C0D3E0009F88F9 /* Foursquare2.h */,
-				471EAC5216C0D3E0009F88F9 /* Foursquare2.m */,
-				471EAC5316C0D3E0009F88F9 /* FSRequester.h */,
-				471EAC5416C0D3E0009F88F9 /* FSRequester.m */,
-				471EAC5516C0D3E0009F88F9 /* FSTargetCallback.h */,
-				471EAC5616C0D3E0009F88F9 /* FSTargetCallback.m */,
-				471EAC5716C0D3E0009F88F9 /* FSWebLogin.h */,
-				471EAC5816C0D3E0009F88F9 /* FSWebLogin.m */,
-				471EAC5916C0D3E0009F88F9 /* FSWebLogin.xib */,
-				471EAC5A16C0D3E0009F88F9 /* poweredByFoursquare_gray.png */,
-				471EAC5B16C0D3E0009F88F9 /* poweredByFoursquare_gray@2x.png */,
+				4C9BB09A1929A0020098B2C8 /* Foursquare2.h */,
+				4C9BB09B1929A0020098B2C8 /* Foursquare2.m */,
+				4C9BB09C1929A0020098B2C8 /* FSConverter.h */,
+				4C9BB09D1929A0020098B2C8 /* FSConverter.m */,
+				4C9BB09E1929A0020098B2C8 /* FSKeychain.h */,
+				4C9BB09F1929A0020098B2C8 /* FSKeychain.m */,
+				4C9BB0A01929A0020098B2C8 /* FSOAuthNoAppStore.h */,
+				4C9BB0A11929A0020098B2C8 /* FSOAuthNoAppStore.m */,
+				4C9BB0A21929A0020098B2C8 /* FSOperation.h */,
+				4C9BB0A31929A0020098B2C8 /* FSOperation.m */,
+				4C9BB0A41929A0020098B2C8 /* FSRequester.h */,
+				4C9BB0A51929A0020098B2C8 /* FSRequester.m */,
+				4C9BB0A61929A0020098B2C8 /* FSTargetCallback.h */,
+				4C9BB0A71929A0020098B2C8 /* FSTargetCallback.m */,
+				4C9BB0A81929A0020098B2C8 /* FSVenue.h */,
+				4C9BB0A91929A0020098B2C8 /* FSVenue.m */,
+				4C9BB0AA1929A0020098B2C8 /* FSWebLogin.h */,
+				4C9BB0AB1929A0020098B2C8 /* FSWebLogin.m */,
+				4C9BB0AC1929A0020098B2C8 /* FSWebLogin.xib */,
+				4C9BB0AD1929A0020098B2C8 /* poweredByFoursquare_gray.png */,
+				4C9BB0AE1929A0020098B2C8 /* poweredByFoursquare_gray@2x.png */,
 			);
 			name = Foursquare2;
 			path = libs/Foursquare2;
@@ -396,21 +424,22 @@
 				09144A7313C2997E00388B00 /* Entitlements.plist in Resources */,
 				4C9BB09919299CE20098B2C8 /* GMCMainViewController.xib in Resources */,
 				4C057322166AE74D00EF6FAD /* FacebookLogin.png in Resources */,
-				471EAC6016C0D435009F88F9 /* FSWebLogin.xib in Resources */,
-				471EAC6116C0D43A009F88F9 /* poweredByFoursquare_gray.png in Resources */,
-				471EAC6216C0D43A009F88F9 /* poweredByFoursquare_gray@2x.png in Resources */,
 				4CC2638318D665DD002B21BA /* release_notes.md in Resources */,
 				4CC2638218D665DD002B21BA /* README.md in Resources */,
 				97E170D7174D3C1F00BA0094 /* bg@2x.png in Resources */,
 				97E170E2174E8F1B00BA0094 /* bg.png in Resources */,
 				4C466042176FB63E00D1FE3A /* white@2x.png in Resources */,
+				4C9BB0B91929A0020098B2C8 /* poweredByFoursquare_gray.png in Resources */,
 				4C466044176FB69F00D1FE3A /* white.png in Resources */,
 				4CEAEFE1176FC26300578254 /* MainWindow.xib in Resources */,
 				4C90A23918D190EF00768B81 /* Images.xcassets in Resources */,
+				4C9BB0BA1929A0020098B2C8 /* poweredByFoursquare_gray@2x.png in Resources */,
 				4C8F7BCA177B58920015B2A8 /* white@2x~ipad.png in Resources */,
 				4C8F7BCB177B58920015B2A8 /* white~ipad.png in Resources */,
 				4C444E4E17A0017D00288139 /* FacebookLogin@2x.png in Resources */,
+				4C0F449D1929B09F0069B254 /* GMCVenueCard.xib in Resources */,
 				4C9D1B5317A6A098007B0FEA /* Localizable.strings in Resources */,
+				4C9BB0B81929A0020098B2C8 /* FSWebLogin.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,19 +466,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C9BB0B61929A0020098B2C8 /* FSVenue.m in Sources */,
+				4C9BB0AF1929A0020098B2C8 /* Foursquare2.m in Sources */,
 				4CB46D8118D14AAE00BBED30 /* ULLocationManager.m in Sources */,
 				09ABC07F13A1D52D009C3FCF /* main.m in Sources */,
+				4C9BB0B41929A0020098B2C8 /* FSRequester.m in Sources */,
+				4C9BB0B31929A0020098B2C8 /* FSOperation.m in Sources */,
 				09ABC08213A1D52D009C3FCF /* GMCAppDelegate.m in Sources */,
-				476D1E2316A8273600077458 /* FSVenue.m in Sources */,
 				4C9BB09419299AB70098B2C8 /* GMCVenueLoader.m in Sources */,
-				471EAC5C16C0D419009F88F9 /* Foursquare2.m in Sources */,
-				471EAC5D16C0D42C009F88F9 /* FSRequester.m in Sources */,
-				471EAC5E16C0D42F009F88F9 /* FSTargetCallback.m in Sources */,
-				471EAC5F16C0D432009F88F9 /* FSWebLogin.m in Sources */,
+				4C9BB0B51929A0020098B2C8 /* FSTargetCallback.m in Sources */,
 				4CC2636D18D3F1D9002B21BA /* ULUIDefs.m in Sources */,
 				4CB46D8A18D154EC00BBED30 /* GMCVenue.m in Sources */,
+				4C9BB0B01929A0020098B2C8 /* FSConverter.m in Sources */,
+				4C9BB0B71929A0020098B2C8 /* FSWebLogin.m in Sources */,
+				4C9BB0B11929A0020098B2C8 /* FSKeychain.m in Sources */,
 				4CB46D8418D14E6000BBED30 /* GMCGlobal.m in Sources */,
 				4C9BB09819299CE20098B2C8 /* GMCMainViewController.m in Sources */,
+				4C9BB0B21929A0020098B2C8 /* FSOAuthNoAppStore.m in Sources */,
+				4C0F449B1929B08A0069B254 /* GMCVenueCard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -549,8 +583,8 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = GimmeCoffee;
-				PROVISIONING_PROFILE = "8A09C321-9456-4EA7-B494-FB8698369E6B";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "8A09C321-9456-4EA7-B494-FB8698369E6B";
+				PROVISIONING_PROFILE = "DC5323BB-B6AC-4823-A189-6D197F8DAC4D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DC5323BB-B6AC-4823-A189-6D197F8DAC4D";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
@@ -565,8 +599,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Mikhail Larionov (WDEGJM2L33)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Mikhail Larionov (WDEGJM2L33)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mikhail Larionov (MP6BRCGVEV)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mikhail Larionov (MP6BRCGVEV)";
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,8 +622,8 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = GimmeCoffee;
-				PROVISIONING_PROFILE = "4C576530-5A20-47F1-832F-9B63BC1D5890";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "4C576530-5A20-47F1-832F-9B63BC1D5890";
+				PROVISIONING_PROFILE = "DC5323BB-B6AC-4823-A189-6D197F8DAC4D";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DC5323BB-B6AC-4823-A189-6D197F8DAC4D";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s";

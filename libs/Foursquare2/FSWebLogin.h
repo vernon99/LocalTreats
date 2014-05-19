@@ -8,14 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@class FSWebLogin;
 
-@interface FSWebLogin : UIViewController<UIWebViewDelegate> {
-	NSString *_url;
-	IBOutlet UIWebView *webView;
-	SEL selector;
-}
+@protocol FSWebLoginDelegate <NSObject>
+@required
 
-@property(nonatomic,weak) id delegate;
-@property (nonatomic,assign)SEL selector;
-- (id) initWithUrl:(NSString*)url;
+- (void)webLogin:(FSWebLogin *)loginViewController didFinishWithError:(NSError *)error;
+
+@end
+
+@interface FSWebLogin : UIViewController
+
+
+- (id) initWithUrl:(NSString *)url
+       andDelegate:(id<FSWebLoginDelegate>)delegate;
+
 @end
