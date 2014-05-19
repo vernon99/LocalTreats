@@ -7,11 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GMCVenueCard.h"
 
 @interface GMCMainViewController : UIViewController
 {
-    IBOutlet UIActivityIndicatorView *_activityIndicator;
-    
+    BOOL                                _locationUpdated;
+    IBOutlet UIActivityIndicatorView*   _activityIndicator;
+    IBOutlet UILabel*                   _statusLabel;
+    IBOutlet UILabel*                   _adviceLabel;
+    NSUInteger                          _currentCardNumber;
+    NSArray*                            _venueArray;
+    GMCVenueCard*                       _currentCard;
 }
 
 @end

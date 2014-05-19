@@ -9,13 +9,15 @@
 #import "GMCVenueLoader.h"
 #import "Foursquare2.h"
 #import "GMCVenue.h"
+#import "ULLocationManager.h"
 
 @implementation GMCVenueLoader
 
 +(void) loadVenueListWithTarget:(id)target andSelector:(SEL)callback
 {
-    NSNumber* latitude = @(37.77617267336489);
-    NSNumber* longitude = @(-122.4277467281766);
+    PFGeoPoint* location = locManager.getPosition;
+    NSNumber* latitude = @(location.latitude);
+    NSNumber* longitude = @(location.longitude);
     NSString* section = @"coffee";  // One of food, drinks, coffee, shops, arts, outdoors, sights, trending or specials, nextVenues (venues frequently visited after a given venue), or topPicks
     
     [Foursquare2 setupFoursquareWithClientId:@"0BMX0XFXUCYZSWBODLKE3I0MVJENME2TKMIEMXQSPKMC4CHS" secret:@"5IQYLZVYI51JR2URBUMFR1QCLTZDX4WJAESTTY1YIYIRSEBE" callbackURL:@""];
@@ -33,11 +35,12 @@
                                                section:section
                                                novelty:nil
                                         sortByDistance:NO
-                                               openNow:YES
+                                               openNow:NO
                                            venuePhotos:YES
                                                  price:nil
                                               callback:^(BOOL success, id result) {
-                                                  
+                                                
+        BOOL callbackCalled = FALSE;
         if (success && result)
         {
             NSArray* groups = result[@"response"][@"groups"];
@@ -58,14 +61,16 @@
                         }
                         
                         [target performSelector:callback withObject:result];
+                        callbackCalled = TRUE;
                     }
                 }
             }
         }
         else
-          NSLog(@"Foursquare error: %@", result);
+            NSLog(@"Foursquare error: %@", result);
         
-        [target performSelector:callback withObject:nil];
+        if ( ! callbackCalled )
+            [target performSelector:callback withObject:nil];
     }];
 }
 

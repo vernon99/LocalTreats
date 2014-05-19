@@ -8,6 +8,7 @@
 //
 
 #import "GMCVenue.h"
+#import "ULLocationManager.h"
 
 @implementation GMCVenue
 
@@ -52,6 +53,8 @@
         _venueRating = [venue objectForKey:@"rating"];
         if ( ! _venueRating )
             return nil;
+        if ( [_venueRating floatValue] < 9.0 )
+            return nil;
         
         NSDictionary* hereNow = [venue objectForKey:@"hereNow"];
         if ( hereNow )
@@ -69,6 +72,8 @@
                 {
                     NSString* prefix = [icon objectForKey:@"prefix"];
                     NSString* suffix = [icon objectForKey:@"suffix"];
+                    if ( prefix && suffix )
+                        _venueIconURL = [NSString stringWithFormat:@"%@64%@", prefix, suffix];
                 }
                 _venueType = [primary objectForKey:@"name"]; // shortName works too
                 
@@ -91,14 +96,27 @@
         if ( photos )
         {
             NSArray* groups = [photos objectForKey:@"groups"];
-            NSDictionary* gr = groups[0];
-            NSArray* photo = [gr objectForKey:@"items"];
-            NSDictionary* p = photo[0];
-            for ( NSString* key in p.allKeys )
+            if ( groups && groups.count > 0 )
             {
-                id temp3 = [p objectForKey:key];
-                temp3 = nil;
-                // prefix, suffix, width, height
+                NSDictionary* gr = groups[0];
+                NSArray* photo = [gr objectForKey:@"items"];
+                if ( photo )
+                {
+                    NSDictionary* p = photo[0];
+                    if ( p )
+                    {
+                        NSString* prefix = [p objectForKey:@"prefix"];
+                        NSString* suffix = [p objectForKey:@"suffix"];
+                        if ( prefix && suffix )
+                            _venuePhotoURL = [NSString stringWithFormat:@"%@300x300%@", prefix, suffix];
+                        /*for ( NSString* key in p.allKeys )
+                        {
+                            id temp3 = [p objectForKey:key];
+                            temp3 = nil;
+                            // prefix, suffix, width, height
+                        }*/
+                    }
+                }
             }
         }
         
@@ -114,6 +132,10 @@
             NSNumber* lat = [location objectForKey:@"lat"];
             NSNumber* lon = [location objectForKey:@"lng"];
             _venueLocation = [PFGeoPoint geoPointWithLatitude:[lat doubleValue] longitude:[lon doubleValue]];
+            
+            CLLocation *l1 = [[CLLocation alloc]initWithLatitude:[lat floatValue] longitude:[lon floatValue]];
+            CLLocation *l2 = [[CLLocation alloc]initWithLatitude:locManager.getPosition.latitude longitude:locManager.getPosition.longitude];
+            _venueDistance = [NSNumber numberWithDouble:[l1 distanceFromLocation:l2]/1000.0];
         }
     }
     

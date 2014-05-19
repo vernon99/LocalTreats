@@ -26,6 +26,9 @@
     NSNumber*   _hereNowCount;
     NSNumber*   _priceTier;
     NSString*   _priceDescription;
+    NSString*   _venuePhotoURL;
+    NSString*   _venueIconURL;
+    NSNumber*   _venueDistance;
 }
 
 @property (readonly) PFObject* data;
@@ -42,6 +45,9 @@
 @property (readonly) NSNumber*      hereNowCount;
 @property (readonly) NSNumber*      priceTier;
 @property (readonly) NSString*      priceDescription;
+@property (readonly) NSString*      venuePhotoURL;
+@property (readonly) NSString*      venueIconURL;
+@property (readonly) NSNumber*      venueDistance;
 
 //+(id) venueWithData:(PFObject*)data;
 +(id) venueWithFSVenue:(NSDictionary*)venue;

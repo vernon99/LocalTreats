@@ -29,6 +29,13 @@
 		4C444E4E17A0017D00288139 /* FacebookLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C444E4D17A0017D00288139 /* FacebookLogin@2x.png */; };
 		4C466042176FB63E00D1FE3A /* white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C466041176FB63E00D1FE3A /* white@2x.png */; };
 		4C466044176FB69F00D1FE3A /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C466043176FB69F00D1FE3A /* white.png */; };
+		4C7795301929D64200999AEC /* AsyncImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C77952B1929D64200999AEC /* AsyncImageView.m */; };
+		4C7795311929D64200999AEC /* ImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C77952D1929D64200999AEC /* ImageLoader.m */; };
+		4C7795321929D64200999AEC /* JMImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C77952F1929D64200999AEC /* JMImageCache.m */; };
+		4C7795371929DDFB00999AEC /* ratingBad@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C7795341929DDFB00999AEC /* ratingBad@2x.png */; };
+		4C7795381929DDFB00999AEC /* ratingGood@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C7795351929DDFB00999AEC /* ratingGood@2x.png */; };
+		4C7795391929DDFB00999AEC /* ratingMid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C7795361929DDFB00999AEC /* ratingMid@2x.png */; };
+		4C7796681929EF4200999AEC /* libFlurry_4.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C7796671929EF4200999AEC /* libFlurry_4.4.0.a */; };
 		4C89DFD617EDE01200428B7E /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C89DFD517EDE01200428B7E /* CoreText.framework */; };
 		4C8F7BCA177B58920015B2A8 /* white@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F7BC8177B58920015B2A8 /* white@2x~ipad.png */; };
 		4C8F7BCB177B58920015B2A8 /* white~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C8F7BC9177B58920015B2A8 /* white~ipad.png */; };
@@ -100,6 +107,17 @@
 		4C444E4D17A0017D00288139 /* FacebookLogin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FacebookLogin@2x.png"; path = "resources/FacebookLogin@2x.png"; sourceTree = "<group>"; };
 		4C466041176FB63E00D1FE3A /* white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white@2x.png"; path = "resources/white@2x.png"; sourceTree = "<group>"; };
 		4C466043176FB69F00D1FE3A /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = resources/white.png; sourceTree = "<group>"; };
+		4C77952A1929D64200999AEC /* AsyncImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncImageView.h; sourceTree = "<group>"; };
+		4C77952B1929D64200999AEC /* AsyncImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncImageView.m; sourceTree = "<group>"; };
+		4C77952C1929D64200999AEC /* ImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageLoader.h; sourceTree = "<group>"; };
+		4C77952D1929D64200999AEC /* ImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageLoader.m; sourceTree = "<group>"; };
+		4C77952E1929D64200999AEC /* JMImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JMImageCache.h; sourceTree = "<group>"; };
+		4C77952F1929D64200999AEC /* JMImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JMImageCache.m; sourceTree = "<group>"; };
+		4C7795341929DDFB00999AEC /* ratingBad@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ratingBad@2x.png"; sourceTree = "<group>"; };
+		4C7795351929DDFB00999AEC /* ratingGood@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ratingGood@2x.png"; sourceTree = "<group>"; };
+		4C7795361929DDFB00999AEC /* ratingMid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ratingMid@2x.png"; sourceTree = "<group>"; };
+		4C7796661929EF4200999AEC /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		4C7796671929EF4200999AEC /* libFlurry_4.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_4.4.0.a; sourceTree = "<group>"; };
 		4C89DFD517EDE01200428B7E /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		4C8F7BC8177B58920015B2A8 /* white@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white@2x~ipad.png"; path = "resources/white@2x~ipad.png"; sourceTree = "<group>"; };
 		4C8F7BC9177B58920015B2A8 /* white~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white~ipad.png"; path = "resources/white~ipad.png"; sourceTree = "<group>"; };
@@ -190,6 +208,7 @@
 				4C90A36318D1910900768B81 /* FacebookSDK.framework in Frameworks */,
 				09ABC07413A1D52D009C3FCF /* Foundation.framework in Frameworks */,
 				4C90A23B18D1910200768B81 /* Parse.framework in Frameworks */,
+				4C7796681929EF4200999AEC /* libFlurry_4.4.0.a in Frameworks */,
 				4CF2DE3717960DF40052E92B /* Crashlytics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -204,6 +223,7 @@
 				47534DC916A7143F008CC823 /* libs */,
 				4CDDA4B717F31EAD000D2418 /* UnitedLibs */,
 				09ABC07713A1D52D009C3FCF /* Project */,
+				4C7795331929DDFB00999AEC /* Resources */,
 				09ABC07013A1D52D009C3FCF /* Frameworks */,
 				09ABC06E13A1D52D009C3FCF /* Products */,
 			);
@@ -220,6 +240,7 @@
 		09ABC07013A1D52D009C3FCF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4C7796651929EF4200999AEC /* Flurry */,
 				4CD9377519074705001AED1F /* StoreKit.framework */,
 				4CC2637A18D665DD002B21BA /* TestFlightSDK3 */,
 				4C90A23D18D1910800768B81 /* FacebookSDK.framework */,
@@ -326,9 +347,44 @@
 		47534DC916A7143F008CC823 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				4C7795291929D64200999AEC /* AsyncImages */,
 				47534D8516A6F8DC008CC823 /* Foursquare2 */,
 			);
 			name = libs;
+			sourceTree = "<group>";
+		};
+		4C7795291929D64200999AEC /* AsyncImages */ = {
+			isa = PBXGroup;
+			children = (
+				4C77952A1929D64200999AEC /* AsyncImageView.h */,
+				4C77952B1929D64200999AEC /* AsyncImageView.m */,
+				4C77952C1929D64200999AEC /* ImageLoader.h */,
+				4C77952D1929D64200999AEC /* ImageLoader.m */,
+				4C77952E1929D64200999AEC /* JMImageCache.h */,
+				4C77952F1929D64200999AEC /* JMImageCache.m */,
+			);
+			name = AsyncImages;
+			path = libs/AsyncImages;
+			sourceTree = "<group>";
+		};
+		4C7795331929DDFB00999AEC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4C7795341929DDFB00999AEC /* ratingBad@2x.png */,
+				4C7795351929DDFB00999AEC /* ratingGood@2x.png */,
+				4C7795361929DDFB00999AEC /* ratingMid@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4C7796651929EF4200999AEC /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				4C7796661929EF4200999AEC /* Flurry.h */,
+				4C7796671929EF4200999AEC /* libFlurry_4.4.0.a */,
+			);
+			name = Flurry;
+			path = ../../Documents/Flurry/Flurry;
 			sourceTree = "<group>";
 		};
 		4CC2637A18D665DD002B21BA /* TestFlightSDK3 */ = {
@@ -431,13 +487,16 @@
 				4C466042176FB63E00D1FE3A /* white@2x.png in Resources */,
 				4C9BB0B91929A0020098B2C8 /* poweredByFoursquare_gray.png in Resources */,
 				4C466044176FB69F00D1FE3A /* white.png in Resources */,
+				4C7795391929DDFB00999AEC /* ratingMid@2x.png in Resources */,
 				4CEAEFE1176FC26300578254 /* MainWindow.xib in Resources */,
 				4C90A23918D190EF00768B81 /* Images.xcassets in Resources */,
 				4C9BB0BA1929A0020098B2C8 /* poweredByFoursquare_gray@2x.png in Resources */,
 				4C8F7BCA177B58920015B2A8 /* white@2x~ipad.png in Resources */,
 				4C8F7BCB177B58920015B2A8 /* white~ipad.png in Resources */,
 				4C444E4E17A0017D00288139 /* FacebookLogin@2x.png in Resources */,
+				4C7795381929DDFB00999AEC /* ratingGood@2x.png in Resources */,
 				4C0F449D1929B09F0069B254 /* GMCVenueCard.xib in Resources */,
+				4C7795371929DDFB00999AEC /* ratingBad@2x.png in Resources */,
 				4C9D1B5317A6A098007B0FEA /* Localizable.strings in Resources */,
 				4C9BB0B81929A0020098B2C8 /* FSWebLogin.xib in Resources */,
 			);
@@ -472,13 +531,16 @@
 				09ABC07F13A1D52D009C3FCF /* main.m in Sources */,
 				4C9BB0B41929A0020098B2C8 /* FSRequester.m in Sources */,
 				4C9BB0B31929A0020098B2C8 /* FSOperation.m in Sources */,
+				4C7795311929D64200999AEC /* ImageLoader.m in Sources */,
 				09ABC08213A1D52D009C3FCF /* GMCAppDelegate.m in Sources */,
 				4C9BB09419299AB70098B2C8 /* GMCVenueLoader.m in Sources */,
 				4C9BB0B51929A0020098B2C8 /* FSTargetCallback.m in Sources */,
 				4CC2636D18D3F1D9002B21BA /* ULUIDefs.m in Sources */,
 				4CB46D8A18D154EC00BBED30 /* GMCVenue.m in Sources */,
 				4C9BB0B01929A0020098B2C8 /* FSConverter.m in Sources */,
+				4C7795301929D64200999AEC /* AsyncImageView.m in Sources */,
 				4C9BB0B71929A0020098B2C8 /* FSWebLogin.m in Sources */,
+				4C7795321929D64200999AEC /* JMImageCache.m in Sources */,
 				4C9BB0B11929A0020098B2C8 /* FSKeychain.m in Sources */,
 				4CB46D8418D14E6000BBED30 /* GMCGlobal.m in Sources */,
 				4C9BB09819299CE20098B2C8 /* GMCMainViewController.m in Sources */,
@@ -565,6 +627,7 @@
 					"\"$(SRCROOT)/libs\"",
 					/Users/Michael/Documents,
 					/Users/Michael/Documents/FacebookSDK,
+					/Users/Michael/Documents/Flurry,
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -576,10 +639,12 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libs\"";
 				INFOPLIST_FILE = Project/GimmeCoffee.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Michael/Documents/TestFlightSDK3,
+					/Users/Michael/Documents/Flurry/Flurry,
+					/Users/Michael/Documents/Flurry/FlurryAds,
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = GimmeCoffee;
@@ -608,6 +673,7 @@
 					"\"$(SRCROOT)/libs\"",
 					/Users/Michael/Documents,
 					/Users/Michael/Documents/FacebookSDK,
+					/Users/Michael/Documents/Flurry,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Project/GimmeCoffee.pch;
@@ -615,15 +681,17 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/libs\"";
 				INFOPLIST_FILE = Project/GimmeCoffee.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/Michael/Documents/TestFlightSDK3,
+					/Users/Michael/Documents/Flurry/Flurry,
+					/Users/Michael/Documents/Flurry/FlurryAds,
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = GimmeCoffee;
-				PROVISIONING_PROFILE = "DC5323BB-B6AC-4823-A189-6D197F8DAC4D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DC5323BB-B6AC-4823-A189-6D197F8DAC4D";
+				PROVISIONING_PROFILE = "B7DD90C2-9095-48AE-B9BA-BD0AE11069A8";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B7DD90C2-9095-48AE-B9BA-BD0AE11069A8";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s";
