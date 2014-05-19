@@ -1,0 +1,20 @@
+//
+// Prefix header for all source files of the 'ParseStarterProject' target in the 'ParseStarterProject' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_3
+#warning "This project uses features only available in iPhone SDK 4.3 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Parse/Parse.h>
+    #import <Foundation/Foundation.h>
+    #import "GMCGlobal.h"
+    #import "ULUIDefs.h"
+    #import "GMCParams.h"
+#endif
+
+#define IOS_NEWER_OR_EQUAL_TO_7 ( [ [ [ UIDevice currentDevice ] systemVersion ] floatValue ] >= 7.0 )

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>06B14F69-2412-4AAC-AC62-48E0D04C75C0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Fuge</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>12A53B4E-52A7-4D8D-A848-67D27967FFD3</key>
+		<string>https://github.com/Shimbo/Fuge.git</string>
+		<key>954B350B-3572-400D-85E7-5DD421078DD2</key>
+		<string>https://github.com/Shimbo/UnitedLibs.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Fuge.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>12A53B4E-52A7-4D8D-A848-67D27967FFD3</key>
+		<string>../..</string>
+		<key>954B350B-3572-400D-85E7-5DD421078DD2</key>
+		<string>../../../UnitedLibs</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Shimbo/Fuge.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>12A53B4E-52A7-4D8D-A848-67D27967FFD3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>12A53B4E-52A7-4D8D-A848-67D27967FFD3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Fuge</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>954B350B-3572-400D-85E7-5DD421078DD2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>UnitedLibs</string>
+		</dict>
+	</array>
+</dict>
+</plist>
