@@ -24,8 +24,6 @@
 		4C0F449D1929B09F0069B254 /* GMCVenueCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F449C1929B09F0069B254 /* GMCVenueCard.xib */; };
 		4C188D251698C72C004CF42D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C188D241698C72B004CF42D /* MapKit.framework */; };
 		4C3ACECA180B2A9F00DC0CEE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C3ACEC9180B2A9F00DC0CEE /* MessageUI.framework */; };
-		4C4228E716C46B62008EBA67 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4228E516C46B62008EBA67 /* EventKit.framework */; };
-		4C4228E816C46B62008EBA67 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4228E616C46B62008EBA67 /* EventKitUI.framework */; };
 		4C444E4E17A0017D00288139 /* FacebookLogin@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C444E4D17A0017D00288139 /* FacebookLogin@2x.png */; };
 		4C466042176FB63E00D1FE3A /* white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C466041176FB63E00D1FE3A /* white@2x.png */; };
 		4C466044176FB69F00D1FE3A /* white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C466043176FB69F00D1FE3A /* white.png */; };
@@ -66,7 +64,6 @@
 		4CC2638318D665DD002B21BA /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 4CC2637D18D665DD002B21BA /* release_notes.md */; };
 		4CEAEFE1176FC26300578254 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CEAEFE0176FC26300578254 /* MainWindow.xib */; };
 		4CF2DE3717960DF40052E92B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF2DE3617960DF40052E92B /* Crashlytics.framework */; };
-		6332375415E438E900AE2736 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6332375315E438E900AE2736 /* libsqlite3.dylib */; };
 		6372FF531613CC3C002132AF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6372FF521613CC3C002132AF /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		743D7B6D157DA60100084B67 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 743D7B6C157DA60100084B67 /* CoreGraphics.framework */; };
 		97E170D7174D3C1F00BA0094 /* bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97E170D5174D3C1F00BA0094 /* bg@2x.png */; };
@@ -98,8 +95,6 @@
 		4C0F449C1929B09F0069B254 /* GMCVenueCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GMCVenueCard.xib; sourceTree = "<group>"; };
 		4C188D241698C72B004CF42D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4C3ACEC9180B2A9F00DC0CEE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		4C4228E516C46B62008EBA67 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
-		4C4228E616C46B62008EBA67 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 		4C444E4D17A0017D00288139 /* FacebookLogin@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "FacebookLogin@2x.png"; path = "resources/FacebookLogin@2x.png"; sourceTree = "<group>"; };
 		4C466041176FB63E00D1FE3A /* white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "white@2x.png"; path = "resources/white@2x.png"; sourceTree = "<group>"; };
 		4C466043176FB69F00D1FE3A /* white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = white.png; path = resources/white.png; sourceTree = "<group>"; };
@@ -163,7 +158,6 @@
 		4CD2683F1798685F003B0FB8 /* GMCParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCParams.h; sourceTree = "<group>"; };
 		4CEAEFE0176FC26300578254 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		4CF2DE3617960DF40052E92B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		6332375315E438E900AE2736 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		6372FF521613CC3C002132AF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		743D7B6C157DA60100084B67 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		97E170D5174D3C1F00BA0094 /* bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "bg@2x.png"; path = "resources/bg@2x.png"; sourceTree = "<group>"; };
@@ -180,12 +174,9 @@
 				4C89DFD617EDE01200428B7E /* CoreText.framework in Frameworks */,
 				2FCDD6B014A573F500295AAC /* QuartzCore.framework in Frameworks */,
 				4CC2638118D665DD002B21BA /* libTestFlight.a in Frameworks */,
-				4C4228E716C46B62008EBA67 /* EventKit.framework in Frameworks */,
-				4C4228E816C46B62008EBA67 /* EventKitUI.framework in Frameworks */,
 				4C188D251698C72C004CF42D /* MapKit.framework in Frameworks */,
 				97E18B1F1624CB5700B17A67 /* CoreLocation.framework in Frameworks */,
 				6372FF531613CC3C002132AF /* Accounts.framework in Frameworks */,
-				6332375415E438E900AE2736 /* libsqlite3.dylib in Frameworks */,
 				743D7B6D157DA60100084B67 /* CoreGraphics.framework in Frameworks */,
 				099CCEAD13F9E3760039A464 /* libz.1.1.3.dylib in Frameworks */,
 				09BEF34C13D51C3F001BBCDB /* Security.framework in Frameworks */,
@@ -235,8 +226,6 @@
 				4C89DFD517EDE01200428B7E /* CoreText.framework */,
 				4C02D35C17B12906008E19EB /* AVFoundation.framework */,
 				4CF2DE3617960DF40052E92B /* Crashlytics.framework */,
-				4C4228E516C46B62008EBA67 /* EventKit.framework */,
-				4C4228E616C46B62008EBA67 /* EventKitUI.framework */,
 				4C188D241698C72B004CF42D /* MapKit.framework */,
 				6372FF521613CC3C002132AF /* Accounts.framework */,
 				095ACE8513C68EA300566243 /* AudioToolbox.framework */,
@@ -244,7 +233,6 @@
 				743D7B6C157DA60100084B67 /* CoreGraphics.framework */,
 				97E18B1E1624CB5700B17A67 /* CoreLocation.framework */,
 				09ABC07313A1D52D009C3FCF /* Foundation.framework */,
-				6332375315E438E900AE2736 /* libsqlite3.dylib */,
 				099CCEAC13F9E3760039A464 /* libz.1.1.3.dylib */,
 				092354B613A1D83C00DA740F /* MobileCoreServices.framework */,
 				2FCDD6AF14A573F500295AAC /* QuartzCore.framework */,
