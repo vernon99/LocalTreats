@@ -53,6 +53,7 @@
         _venueRating = [venue objectForKey:@"rating"];
         if ( ! _venueRating )
             return nil;
+        _venueRating = [NSNumber numberWithFloat:lroundf([_venueRating floatValue]*10.0)/10.0];
         if ( [_venueRating floatValue] < 9.0 )
             return nil;
         

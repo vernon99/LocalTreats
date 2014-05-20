@@ -35,7 +35,7 @@
                                                section:section
                                                novelty:nil
                                         sortByDistance:NO
-                                               openNow:NO
+                                               openNow:YES
                                            venuePhotos:YES
                                                  price:nil
                                               callback:^(BOOL success, id result) {

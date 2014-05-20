@@ -18,14 +18,13 @@
     _venueAddress.text = [NSString stringWithFormat:@"Address: %@", venue.venueAddress];
     _venueCity.text = venue.venueCity;
     _venueCrossroads.text = venue.venueAddressTip;
-    float fRoundedRating = lroundf([venue.venueRating floatValue]*10.0)/10.0;
-    if ( fRoundedRating < 9.3 )
+    if ( [venue.venueRating floatValue] < 9.3 )
         _venueRatingBg.image = [UIImage imageNamed:@"ratingBad"];
-    else if ( fRoundedRating < 9.6 )
+    else if ( [venue.venueRating floatValue] < 9.6 )
         _venueRatingBg.image = [UIImage imageNamed:@"ratingMid"];
     else
         _venueRatingBg.image = [UIImage imageNamed:@"ratingGood"];
-    _venueRating.text = [NSString stringWithFormat:@"%.1f", fRoundedRating];
+    _venueRating.text = [NSString stringWithFormat:@"%.1f", [venue.venueRating floatValue]];
     _venueHereNow.text = [NSString stringWithFormat:@"%@ visitors", venue.hereNowCount];
     _venuePrice.text = [NSString stringWithFormat:@"%@ prices", venue.priceDescription];
     _venueDistance.text = [NSString stringWithFormat:@"%.2fkm away", [venue.venueDistance floatValue]];
