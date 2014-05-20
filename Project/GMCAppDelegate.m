@@ -18,8 +18,6 @@ static NSDictionary* notificationData = nil;
     
     bFirstActivation = true;
     
-    [FBProfilePictureView class];
-    
     // Testflight
     @try {
         [TestFlight takeOff:APP_TESTFLIGHT_TOKEN];

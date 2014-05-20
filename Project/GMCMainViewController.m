@@ -30,6 +30,7 @@
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationUpdated) name:kLocationUpdated object:nil];
     [locManager startUpdating];
+    _statusLabel.text = @"Location updating...";
     
     UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedCard:)];
     swipeGesture.numberOfTouchesRequired = 1;
@@ -104,7 +105,7 @@
         }
         else
         {
-            _statusLabel.text = @"";
+            _statusLabel.text = @"Loading venues...";
             [GMCVenueLoader loadVenueListWithTarget:self andSelector:@selector(venuesLoaded:)];
         }
     }
@@ -140,7 +141,10 @@
     }
     else
     {
-        _statusLabel.text = @"There's nothing worth your attention in the nearest radius of 5km. And yes, we won't show you nearest Starbucks, sorry.";
+        if ( venues )
+            _statusLabel.text = @"There's nothing worth your attention in the nearest radius of 5km. And yes, we won't show you nearest Starbucks, sorry.";
+        else
+            _statusLabel.text = @"We were unable to fetch locations. Possible reasons include no connection, Foursquare servers failuer or just some karmic turbulations.";
     }
 }
 
