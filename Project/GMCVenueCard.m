@@ -13,10 +13,20 @@
 
 - (void) loadData:(GMCVenue*)venue
 {
+    _venue = venue;
+    
+    switch (venue.venueCategory)
+    {
+        case GMC_QUERY_COFFEE: self.backgroundColor = [UIColor colorWithHexString:@"fd8f2d"]; break;
+        case GMC_QUERY_LUNCH: self.backgroundColor = [UIColor colorWithHexString:@"fa5c5c"]; break;
+        case GMC_QUERY_DRINKS: self.backgroundColor = [UIColor colorWithHexString:@"3393ff"]; break;
+        default: self.backgroundColor = [UIColor colorWithHexString:@"000000"];
+    }
+    
     _venueName.text = venue.venueName;
     _venueType.text = venue.venueType;
     _venueAddress.text = [NSString stringWithFormat:@"Address: %@", venue.venueAddress];
-    _venueCity.text = venue.venueCity;
+    //_venueCity.text = venue.venueCity;
     _venueCrossroads.text = venue.venueAddressTip;
     if ( [venue.venueRating floatValue] < 9.3 )
         _venueRatingBg.image = [UIImage imageNamed:@"ratingBad"];
@@ -72,6 +82,41 @@
     GMCVenueCard* result = [[[NSBundle mainBundle] loadNibNamed:@"GMCVenueCard" owner:self options:nil] objectAtIndex:0];
     [result loadData:venue];
     return result;
+}
+
+- (IBAction)openMaps:(id)sender {
+    
+    UIAlertView *message = [[UIAlertView alloc] initWithTitle:@"Directions" message:@"Open directions to this location in Maps?" delegate:self cancelButtonTitle:@"No" otherButtonTitles:@"Yes", nil];
+    [message show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if ( buttonIndex == 0 )
+        return;
+    
+    // Open map on click
+    Class mapItemClass = [MKMapItem class];
+    if (mapItemClass && [mapItemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)])
+    {
+        // Create an MKMapItem to pass to the Maps app
+        CLLocationCoordinate2D coordinate =
+        CLLocationCoordinate2DMake(_venue.venueLocation.latitude, _venue.venueLocation.longitude);
+        MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coordinate
+                                                       addressDictionary:nil];
+        MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];
+        [mapItem setName:_venue.venueName];
+        
+        // Set the directions mode to "Walking"
+        // Can use MKLaunchOptionsDirectionsModeDriving instead
+        NSDictionary *launchOptions = @{MKLaunchOptionsDirectionsModeKey : MKLaunchOptionsDirectionsModeWalking};
+        // Get the "Current User Location" MKMapItem
+        MKMapItem *currentLocationMapItem = [MKMapItem mapItemForCurrentLocation];
+        // Pass the current location and destination map items to the Maps app
+        // Set the direction mode in the launchOptions dictionary
+        [MKMapItem openMapsWithItems:@[currentLocationMapItem, mapItem]
+                       launchOptions:launchOptions];
+    }
 }
 
 @end

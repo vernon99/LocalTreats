@@ -55,6 +55,9 @@
 		4C9BB0B91929A0020098B2C8 /* poweredByFoursquare_gray.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9BB0AD1929A0020098B2C8 /* poweredByFoursquare_gray.png */; };
 		4C9BB0BA1929A0020098B2C8 /* poweredByFoursquare_gray@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4C9BB0AE1929A0020098B2C8 /* poweredByFoursquare_gray@2x.png */; };
 		4C9D1B5317A6A098007B0FEA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4C9D1B5217A6A098007B0FEA /* Localizable.strings */; };
+		4CA6B5FF19369C27006FDB1F /* glyphCocktail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA6B5FC19369C27006FDB1F /* glyphCocktail@2x.png */; };
+		4CA6B60019369C27006FDB1F /* glyphCoffee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA6B5FD19369C27006FDB1F /* glyphCoffee@2x.png */; };
+		4CA6B60119369C27006FDB1F /* glyphLunch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA6B5FE19369C27006FDB1F /* glyphLunch@2x.png */; };
 		4CB46D8118D14AAE00BBED30 /* ULLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB46D8018D14AAE00BBED30 /* ULLocationManager.m */; };
 		4CB46D8418D14E6000BBED30 /* GMCGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB46D8318D14E6000BBED30 /* GMCGlobal.m */; };
 		4CB46D8A18D154EC00BBED30 /* GMCVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB46D8918D154EC00BBED30 /* GMCVenue.m */; };
@@ -141,6 +144,9 @@
 		4C9BB0AD1929A0020098B2C8 /* poweredByFoursquare_gray.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = poweredByFoursquare_gray.png; sourceTree = "<group>"; };
 		4C9BB0AE1929A0020098B2C8 /* poweredByFoursquare_gray@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "poweredByFoursquare_gray@2x.png"; sourceTree = "<group>"; };
 		4C9D1B5217A6A098007B0FEA /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = resources/Localizable.strings; sourceTree = "<group>"; };
+		4CA6B5FC19369C27006FDB1F /* glyphCocktail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphCocktail@2x.png"; sourceTree = "<group>"; };
+		4CA6B5FD19369C27006FDB1F /* glyphCoffee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphCoffee@2x.png"; sourceTree = "<group>"; };
+		4CA6B5FE19369C27006FDB1F /* glyphLunch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphLunch@2x.png"; sourceTree = "<group>"; };
 		4CB46D7F18D14AAE00BBED30 /* ULLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ULLocationManager.h; path = ../UnitedLibs/ULLocationManager.h; sourceTree = "<group>"; };
 		4CB46D8018D14AAE00BBED30 /* ULLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ULLocationManager.m; path = ../UnitedLibs/ULLocationManager.m; sourceTree = "<group>"; };
 		4CB46D8218D14E6000BBED30 /* GMCGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCGlobal.h; sourceTree = "<group>"; };
@@ -345,6 +351,9 @@
 				4C7795341929DDFB00999AEC /* ratingBad@2x.png */,
 				4C7795351929DDFB00999AEC /* ratingGood@2x.png */,
 				4C7795361929DDFB00999AEC /* ratingMid@2x.png */,
+				4CA6B5FC19369C27006FDB1F /* glyphCocktail@2x.png */,
+				4CA6B5FD19369C27006FDB1F /* glyphCoffee@2x.png */,
+				4CA6B5FE19369C27006FDB1F /* glyphLunch@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -452,13 +461,16 @@
 				09144A7313C2997E00388B00 /* Entitlements.plist in Resources */,
 				4C9BB09919299CE20098B2C8 /* GMCMainViewController.xib in Resources */,
 				4C057322166AE74D00EF6FAD /* FacebookLogin.png in Resources */,
+				4CA6B60019369C27006FDB1F /* glyphCoffee@2x.png in Resources */,
 				4CC2638318D665DD002B21BA /* release_notes.md in Resources */,
+				4CA6B60119369C27006FDB1F /* glyphLunch@2x.png in Resources */,
 				4CC2638218D665DD002B21BA /* README.md in Resources */,
 				97E170D7174D3C1F00BA0094 /* bg@2x.png in Resources */,
 				97E170E2174E8F1B00BA0094 /* bg.png in Resources */,
 				4C466042176FB63E00D1FE3A /* white@2x.png in Resources */,
 				4C9BB0B91929A0020098B2C8 /* poweredByFoursquare_gray.png in Resources */,
 				4C466044176FB69F00D1FE3A /* white.png in Resources */,
+				4CA6B5FF19369C27006FDB1F /* glyphCocktail@2x.png in Resources */,
 				4C7795391929DDFB00999AEC /* ratingMid@2x.png in Resources */,
 				4CEAEFE1176FC26300578254 /* MainWindow.xib in Resources */,
 				4C90A23918D190EF00768B81 /* Images.xcassets in Resources */,

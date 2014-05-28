@@ -10,6 +10,6 @@
 
 @interface GMCVenueLoader : NSObject
 
-+(void) loadVenueListWithTarget:(id)target andSelector:(SEL)callback;
++(void) loadVenueListByType:(GMCQueryType)type withTarget:(id)target andSelector:(SEL)callback;
 
 @end

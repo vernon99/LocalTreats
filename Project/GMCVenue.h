@@ -14,6 +14,8 @@
     PFObject*   _data;
     BOOL        _isSaving;
     
+    GMCQueryType    _venueCategory;
+    
     // Specific fields
     NSString*   _venueId;
     NSString*   _venueName;
@@ -33,6 +35,8 @@
 
 @property (readonly) PFObject* data;
 @property (readonly) BOOL isSaving;
+
+@property (readwrite) GMCQueryType  venueCategory;
 
 @property (readonly) NSString*      venueId;
 @property (readonly) NSString*      venueName;

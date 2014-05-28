@@ -16,8 +16,22 @@
     IBOutlet UILabel*                   _statusLabel;
     IBOutlet UILabel*                   _adviceLabel;
     NSUInteger                          _currentCardNumber;
-    NSArray*                            _venueArray;
+    
+    NSMutableDictionary*                _venueArrays;
+    NSArray*                            _selectedTypeArray;
+    
     GMCVenueCard*                       _currentCard;
+    
+    IBOutlet UIView *_buttonsView;
+    IBOutlet UIButton *_buttonCoffee;
+    IBOutlet UIButton *_buttonLunch;
+    IBOutlet UIButton *_buttonDrinks;
+    
+    GMCQueryType    _currentQuery;
+    GMCQueryType    _nowLoading;
 }
+
+- (IBAction)buttonTap:(id)sender;
+
 
 @end

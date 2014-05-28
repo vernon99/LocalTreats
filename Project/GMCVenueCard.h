@@ -13,10 +13,11 @@
 
 @interface GMCVenueCard : UIView
 {
+    GMCVenue* _venue;
+    
     IBOutlet UILabel *_venueName;
     IBOutlet UILabel *_venueType;
     IBOutlet UILabel *_venueAddress;
-    IBOutlet UILabel *_venueCity;
     IBOutlet UILabel *_venueCrossroads;
     IBOutlet UILabel *_venueRating;
     IBOutlet UIImageView *_venueRatingBg;
@@ -30,5 +31,6 @@
 }
 
 + (GMCVenueCard*) cardWithVenue:(GMCVenue*)venue;
+- (IBAction)openMaps:(id)sender;
 
 @end
