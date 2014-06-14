@@ -56,7 +56,20 @@ static NSDictionary* notificationData = nil;
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
-    GMCMainViewController *mainViewController = [[GMCMainViewController alloc] initWithNibName:@"GMCMainViewController" bundle:nil];
+    
+    GMCMainViewController* mainViewController;
+    if ( self.window.rootViewController )
+        if ( [self.window.rootViewController isKindOfClass:[GMCMainViewController class]] )
+        {
+            mainViewController = (GMCMainViewController*) self.window.rootViewController;
+            if ( mainViewController.showingCard )
+            {
+                [mainViewController reloadData];
+                return;
+            }
+        }
+    
+    mainViewController = [[GMCMainViewController alloc] initWithNibName:@"GMCMainViewController" bundle:nil];
     self.window.rootViewController = mainViewController;
 }
 

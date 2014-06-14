@@ -31,6 +31,9 @@
     NSString*   _venuePhotoURL;
     NSString*   _venueIconURL;
     NSNumber*   _venueDistance;
+    
+    NSArray*    _photoUrls;
+    NSInteger   _currentPhotoNumber;
 }
 
 @property (readonly) PFObject* data;
@@ -52,6 +55,9 @@
 @property (readonly) NSString*      venuePhotoURL;
 @property (readonly) NSString*      venueIconURL;
 @property (readonly) NSNumber*      venueDistance;
+
+@property (readwrite) NSArray*      photoUrls;
+@property (readwrite) NSInteger     currentPhotoNumber;
 
 //+(id) venueWithData:(PFObject*)data;
 +(id) venueWithFSVenue:(NSDictionary*)venue;

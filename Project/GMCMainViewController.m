@@ -11,7 +11,7 @@
 #import "GMCVenueCard.h"
 #import "ULLocationManager.h"
 
-static CGPoint venueCardPosition = {10, 30};
+static CGPoint venueCardPosition = {0, 30};
 
 @implementation GMCMainViewController
 
@@ -21,6 +21,7 @@ static CGPoint venueCardPosition = {10, 30};
     if (self) {
         _locationUpdated = FALSE;
         _currentQuery = GMC_QUERY_NONE;
+        _nextLoading = GMC_QUERY_NONE;
         _nowLoading = GMC_QUERY_COFFEE;
         _venueArrays = [NSMutableDictionary dictionaryWithCapacity:GMC_QUERIES_COUNT];
     }
@@ -32,9 +33,10 @@ static CGPoint venueCardPosition = {10, 30};
     [super viewDidLoad];
     
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(locationUpdated) name:kLocationUpdated object:nil];
-    [locManager startUpdating];
+    [_activityIndicator startAnimating];
     _statusLabel.text = @"Updating location...";
     _statusLabel.alpha = 0.0;
+    [locManager startUpdating];
     
     UISwipeGestureRecognizer *swipeGesture = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipedCard:)];
     swipeGesture.numberOfTouchesRequired = 1;
@@ -125,6 +127,7 @@ static CGPoint venueCardPosition = {10, 30};
         if ( _currentCard )
             _currentCard.alpha = 0.0;
         _adviceLabel.alpha = 0.0;
+        _statusLabel.alpha = 0.0;
         
     } completion:^(BOOL finished) {
         
@@ -158,7 +161,7 @@ static CGPoint venueCardPosition = {10, 30};
         }
         else
         {
-            [GMCVenueLoader loadVenueListByType:_nowLoading withTarget:self andSelector:@selector(venuesLoaded:)];
+            [venueLoader loadVenueListByType:_nowLoading withTarget:self andSelector:@selector(venuesLoaded:)];
         }
     }
 }
@@ -186,6 +189,46 @@ static CGPoint venueCardPosition = {10, 30};
             else
                 return NSOrderedDescending;
         }];
+        
+        // Set treats to a separate array and remove it from lunch
+        if ( venueType == GMC_QUERY_LUNCH )
+        {
+            NSArray* categoriesTreatsOnly = [NSArray arrayWithObjects:GMCTreatsOnlyCategories count:GMCTreatsOnlyCategoriesCount];
+            /*NSInteger countTreatsAndFood = sizeof(GMCTreatsAndFoodCategories)/sizeof(NSString*);
+            NSArray* categoriesTreatsAndFood = [NSArray arrayWithObjects:GMCTreatsAndFoodCategories count:countTreatsAndFood];
+            NSArray* categoriesBoth = [categoriesTreatsOnly arrayByAddingObjectsFromArray:categoriesTreatsAndFood];*/
+            
+            // Separate treats array
+            /*NSMutableArray* arrayTreats = [NSMutableArray arrayWithArray:sortedArray];
+            BOOL found;
+            do {
+                found = FALSE;
+                for ( GMCVenue* venue in arrayTreats )
+                    if ( ! [categoriesBoth containsObject:venue.venueType])
+                    {
+                        found = TRUE;
+                        [arrayTreats removeObject:venue];
+                        break;
+                    }
+            } while (found);
+            [_venueArrays setObject:arrayTreats forKey:[NSNumber numberWithInteger:GMC_QUERY_TREATS]];*/
+            
+            // Remove treats from lunch
+            BOOL found;
+            NSMutableArray* lunchArray = [NSMutableArray arrayWithArray:sortedArray];
+            do {
+                found = FALSE;
+                for ( GMCVenue* venue in lunchArray )
+                    if ( [categoriesTreatsOnly containsObject:venue.venueType])
+                    {
+                        found = TRUE;
+                        [lunchArray removeObject:venue];
+                        break;
+                    }
+            } while (found);
+            sortedArray = lunchArray;
+        }
+        
         [_venueArrays setObject:sortedArray forKey:venueKey];
         
         //UIImageView* image = (UIImageView*)[self.view viewWithTag:venueType+20];
@@ -193,17 +236,20 @@ static CGPoint venueCardPosition = {10, 30};
     }
     
     // Try to find next unloaded and load it
-    BOOL found = FALSE;
-    for ( GMCQueryType type = 0; type < GMC_QUERIES_COUNT; type++ )
-        if ( ! [self venueArrayByType:type] && _nowLoading != type )
-        {
-            _nowLoading = type;
-            [GMCVenueLoader loadVenueListByType:_nowLoading withTarget:self andSelector:@selector(venuesLoaded:)];
-            found = TRUE;
-            break;
-        }
-    if ( ! found )
-        _nowLoading = GMC_QUERY_NONE;
+    if ( _nextLoading != GMC_QUERY_NONE && [self venueArrayByType:_nextLoading] )
+        _nextLoading = GMC_QUERY_NONE;
+    if ( _nextLoading == GMC_QUERY_NONE )
+    {
+        for ( GMCQueryType type = 0; type < GMC_QUERIES_COUNT; type++ )
+            if ( ! [self venueArrayByType:type] )
+            {
+                _nextLoading = type;
+                break;
+            }
+    }
+    _nowLoading = _nextLoading;
+    if ( _nowLoading != GMC_QUERY_NONE )
+        [venueLoader loadVenueListByType:_nowLoading withTarget:self andSelector:@selector(venuesLoaded:)];
     
     // If mode is already selected, update card
     if ( _currentQuery == venueType )
@@ -282,7 +328,10 @@ static CGPoint venueCardPosition = {10, 30};
         _nowLoading = _currentQuery;
     }
     else
+    {
+        _nextLoading = _currentQuery;
         [self updateQueryResult];
+    }
 }
 
 - (void) updateQueryResult
@@ -293,16 +342,38 @@ static CGPoint venueCardPosition = {10, 30};
         [_activityIndicator startAnimating];
         _statusLabel.text = @"Loading venues...";
         _adviceLabel.text = @"";
-        if ( _nowLoading != _currentQuery )
+        /*if ( _nowLoading != _currentQuery )
         {
             _nowLoading = _currentQuery;
-            [GMCVenueLoader loadVenueListByType:_nowLoading withTarget:self andSelector:@selector(venuesLoaded:)];
-        }
+            [venueLoader loadVenueListByType:_nowLoading withTarget:self andSelector:@selector(venuesLoaded:)];
+        }*/
     }
     else
     {
         _statusLabel.text = @"";
         [self showFirstCard];
+    }
+}
+
+- (BOOL) showingCard
+{
+    return _currentCard ? TRUE : FALSE;
+}
+
+- (void) reloadData
+{
+    [_venueArrays removeAllObjects];
+    
+    _currentQuery = GMC_QUERY_NONE;
+    _nextLoading = GMC_QUERY_NONE;
+    _nowLoading = GMC_QUERY_COFFEE;
+    
+    [venueLoader loadVenueListByType:_nowLoading withTarget:self andSelector:@selector(venuesLoaded:)];
+    
+    for ( NSInteger n = 0; n < GMC_QUERIES_COUNT; n++ )
+    {
+        UIImageView* image = (UIImageView*)[self.view viewWithTag:n+20];
+        image.hidden = TRUE;
     }
 }
 

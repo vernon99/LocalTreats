@@ -58,6 +58,7 @@
 		4CA6B5FF19369C27006FDB1F /* glyphCocktail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA6B5FC19369C27006FDB1F /* glyphCocktail@2x.png */; };
 		4CA6B60019369C27006FDB1F /* glyphCoffee@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA6B5FD19369C27006FDB1F /* glyphCoffee@2x.png */; };
 		4CA6B60119369C27006FDB1F /* glyphLunch@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CA6B5FE19369C27006FDB1F /* glyphLunch@2x.png */; };
+		4CADBC44194BD77D00AB51CF /* loadingIndicator@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CADBC43194BD77D00AB51CF /* loadingIndicator@2x.png */; };
 		4CB46D8118D14AAE00BBED30 /* ULLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB46D8018D14AAE00BBED30 /* ULLocationManager.m */; };
 		4CB46D8418D14E6000BBED30 /* GMCGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB46D8318D14E6000BBED30 /* GMCGlobal.m */; };
 		4CB46D8A18D154EC00BBED30 /* GMCVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CB46D8918D154EC00BBED30 /* GMCVenue.m */; };
@@ -65,6 +66,7 @@
 		4CC2638118D665DD002B21BA /* libTestFlight.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CC2637B18D665DD002B21BA /* libTestFlight.a */; };
 		4CC2638218D665DD002B21BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 4CC2637C18D665DD002B21BA /* README.md */; };
 		4CC2638318D665DD002B21BA /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 4CC2637D18D665DD002B21BA /* release_notes.md */; };
+		4CD5D67F1942C65C0038DFBD /* glyphTreats@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4CD5D67E1942C65C0038DFBD /* glyphTreats@2x.png */; };
 		4CEAEFE1176FC26300578254 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CEAEFE0176FC26300578254 /* MainWindow.xib */; };
 		4CF2DE3717960DF40052E92B /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CF2DE3617960DF40052E92B /* Crashlytics.framework */; };
 		6372FF531613CC3C002132AF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6372FF521613CC3C002132AF /* Accounts.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
@@ -147,6 +149,7 @@
 		4CA6B5FC19369C27006FDB1F /* glyphCocktail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphCocktail@2x.png"; sourceTree = "<group>"; };
 		4CA6B5FD19369C27006FDB1F /* glyphCoffee@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphCoffee@2x.png"; sourceTree = "<group>"; };
 		4CA6B5FE19369C27006FDB1F /* glyphLunch@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphLunch@2x.png"; sourceTree = "<group>"; };
+		4CADBC43194BD77D00AB51CF /* loadingIndicator@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loadingIndicator@2x.png"; sourceTree = "<group>"; };
 		4CB46D7F18D14AAE00BBED30 /* ULLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ULLocationManager.h; path = ../UnitedLibs/ULLocationManager.h; sourceTree = "<group>"; };
 		4CB46D8018D14AAE00BBED30 /* ULLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ULLocationManager.m; path = ../UnitedLibs/ULLocationManager.m; sourceTree = "<group>"; };
 		4CB46D8218D14E6000BBED30 /* GMCGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCGlobal.h; sourceTree = "<group>"; };
@@ -162,6 +165,7 @@
 		4CC2637F18D665DD002B21BA /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		4CC2638018D665DD002B21BA /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		4CD2683F1798685F003B0FB8 /* GMCParams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMCParams.h; sourceTree = "<group>"; };
+		4CD5D67E1942C65C0038DFBD /* glyphTreats@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "glyphTreats@2x.png"; sourceTree = "<group>"; };
 		4CEAEFE0176FC26300578254 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		4CF2DE3617960DF40052E92B /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		6372FF521613CC3C002132AF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -354,6 +358,8 @@
 				4CA6B5FC19369C27006FDB1F /* glyphCocktail@2x.png */,
 				4CA6B5FD19369C27006FDB1F /* glyphCoffee@2x.png */,
 				4CA6B5FE19369C27006FDB1F /* glyphLunch@2x.png */,
+				4CD5D67E1942C65C0038DFBD /* glyphTreats@2x.png */,
+				4CADBC43194BD77D00AB51CF /* loadingIndicator@2x.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -470,6 +476,8 @@
 				4C466042176FB63E00D1FE3A /* white@2x.png in Resources */,
 				4C9BB0B91929A0020098B2C8 /* poweredByFoursquare_gray.png in Resources */,
 				4C466044176FB69F00D1FE3A /* white.png in Resources */,
+				4CD5D67F1942C65C0038DFBD /* glyphTreats@2x.png in Resources */,
+				4CADBC44194BD77D00AB51CF /* loadingIndicator@2x.png in Resources */,
 				4CA6B5FF19369C27006FDB1F /* glyphCocktail@2x.png in Resources */,
 				4C7795391929DDFB00999AEC /* ratingMid@2x.png in Resources */,
 				4CEAEFE1176FC26300578254 /* MainWindow.xib in Resources */,
@@ -632,8 +640,8 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = GimmeCoffee;
-				PROVISIONING_PROFILE = "DC5323BB-B6AC-4823-A189-6D197F8DAC4D";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "DC5323BB-B6AC-4823-A189-6D197F8DAC4D";
+				PROVISIONING_PROFILE = "CB8DA527-C9FC-4869-B124-974DCF03C93B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CB8DA527-C9FC-4869-B124-974DCF03C93B";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALID_ARCHS = "arm64 armv7 armv7s";
 				WARNING_CFLAGS = "-Wno-arc-performSelector-leaks";
@@ -674,8 +682,8 @@
 				);
 				OTHER_LDFLAGS = "";
 				PRODUCT_NAME = GimmeCoffee;
-				PROVISIONING_PROFILE = "B7DD90C2-9095-48AE-B9BA-BD0AE11069A8";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "B7DD90C2-9095-48AE-B9BA-BD0AE11069A8";
+				PROVISIONING_PROFILE = "CB8DA527-C9FC-4869-B124-974DCF03C93B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CB8DA527-C9FC-4869-B124-974DCF03C93B";
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				VALID_ARCHS = "arm64 armv7 armv7s";

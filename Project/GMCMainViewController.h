@@ -26,12 +26,17 @@
     IBOutlet UIButton *_buttonCoffee;
     IBOutlet UIButton *_buttonLunch;
     IBOutlet UIButton *_buttonDrinks;
+    IBOutlet UIButton *_buttonTreats;
     
     GMCQueryType    _currentQuery;
     GMCQueryType    _nowLoading;
+    GMCQueryType    _nextLoading;
 }
 
 - (IBAction)buttonTap:(id)sender;
+
+- (BOOL) showingCard;
+- (void) reloadData;
 
 
 @end

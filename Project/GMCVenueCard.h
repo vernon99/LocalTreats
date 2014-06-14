@@ -14,6 +14,7 @@
 @interface GMCVenueCard : UIView
 {
     GMCVenue* _venue;
+    IBOutlet UIView *_cardView;
     
     IBOutlet UILabel *_venueName;
     IBOutlet UILabel *_venueType;
@@ -28,9 +29,19 @@
     IBOutlet AsyncImageView *_venueIcon;
     IBOutlet UIActivityIndicatorView *_venuePhotoIndicator;
     IBOutlet UILabel *_venueDistance;
+    
+    IBOutlet UIButton *_mapButton;
+    IBOutlet UIButton *_photosButton;
+    
+    UISwipeGestureRecognizer *_swipeGestureLeft;
+    UISwipeGestureRecognizer *_swipeGestureRight;
+    UISwipeGestureRecognizer *_swipeGestureDown;
+    CGRect _oldPhotoRect;
+    IBOutlet UILabel *_photoNumberLabel;
 }
 
 + (GMCVenueCard*) cardWithVenue:(GMCVenue*)venue;
 - (IBAction)openMaps:(id)sender;
+- (IBAction)openPhotos:(id)sender;
 
 @end

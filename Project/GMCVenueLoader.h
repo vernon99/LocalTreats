@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+#define venueLoader [GMCVenueLoader sharedInstance]
+
 @interface GMCVenueLoader : NSObject
 
-+(void) loadVenueListByType:(GMCQueryType)type withTarget:(id)target andSelector:(SEL)callback;
++ (GMCVenueLoader*) sharedInstance;
+
+- (void) loadVenueListByType:(GMCQueryType)type withTarget:(id)target andSelector:(SEL)callback;
+
+- (void) getVenuePhotos:(NSString*)venue withTarget:(id)target andSelector:(SEL)callback;
 
 @end

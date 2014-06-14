@@ -10,7 +10,7 @@
 @class JMImageCache;
 
 static const NSInteger kDefaultCacheMaxCacheAge = 60 * 60 * 24 * 7; // 1 week
-static const NSInteger kDefaultMaxCaccheSize = 100000000; // 100 MB
+static const NSInteger kDefaultMaxCaccheSize = 1000000; // 100 MB
 
 @interface JMImageCache : NSCache
 

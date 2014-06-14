@@ -16,6 +16,7 @@
 {
     if (self = [super init]) {
         _isSaving = NO;
+        _currentPhotoNumber = 0;
     }
     return self;
 }
@@ -54,8 +55,6 @@
         if ( ! _venueRating )
             return nil;
         _venueRating = [NSNumber numberWithFloat:lroundf([_venueRating floatValue]*10.0)/10.0];
-        if ( [_venueRating floatValue] < 9.0 )
-            return nil;
         
         NSDictionary* hereNow = [venue objectForKey:@"hereNow"];
         if ( hereNow )
@@ -109,7 +108,7 @@
                         NSString* prefix = [p objectForKey:@"prefix"];
                         NSString* suffix = [p objectForKey:@"suffix"];
                         if ( prefix && suffix )
-                            _venuePhotoURL = [NSString stringWithFormat:@"%@300x300%@", prefix, suffix];
+                            _venuePhotoURL = [NSString stringWithFormat:@"%@500x500%@", prefix, suffix];
                         /*for ( NSString* key in p.allKeys )
                         {
                             id temp3 = [p objectForKey:key];
