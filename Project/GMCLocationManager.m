@@ -7,7 +7,6 @@
 //
 
 #import "GMCLocationManager.h"
-#import <Parse/Parse.h>
 
 @implementation GMCLocationManager
 
@@ -31,7 +30,6 @@ static NSUInteger fireLocationEnabledNotification = 0;
     self = [super init];
     
     if (self) {
-        geoPoint = geoPointOld = nil;
         locationManager = [[CLLocationManager alloc] init];
         locationManager.delegate = self;
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters;
@@ -43,7 +41,6 @@ static NSUInteger fireLocationEnabledNotification = 0;
 
 -(void)startUpdating
 {
-    geoPointOld = nil;
     [locationManager startUpdatingLocation];
 }
 
@@ -51,27 +48,21 @@ static NSUInteger fireLocationEnabledNotification = 0;
     
     if (newLocation.horizontalAccuracy < 0) return;
     
-    if ( ! currentUserData ) return;
-    
     // New location
     CLLocationCoordinate2D coord = newLocation.coordinate;
-    geoPoint = [PFGeoPoint geoPointWithLatitude:coord.latitude longitude:coord.longitude];
-    
-    // Store in PFUser and get the result
-    [currentUserData setObject:geoPoint forKey:@"location"];
+    geoPoint = [[CLLocation alloc] initWithLatitude:coord.latitude longitude:coord.longitude];
     
     // Distance calculation
-    float fDistance;
+    CLLocationDistance fDistance;
     if ( geoPointOld )
-        fDistance = [geoPoint distanceInKilometersTo:geoPointOld];
+        fDistance = [geoPoint distanceFromLocation:geoPointOld];
     else
-        fDistance = 10000000.0f;
+        fDistance = 100000000.0;
     
     // If location was saved and distance is quite big, save data
-    if ( fDistance > GMCLocationUpdateKilometers )
+    if ( fDistance > GMCLocationUpdateMeters )
     {
         geoPointOld = geoPoint;
-        [currentUserData saveInBackground];
         [[NSNotificationCenter defaultCenter]postNotificationName:kLocationUpdated object:nil];
         NSLog(@"Location updated");
     }
@@ -103,12 +94,12 @@ static NSUInteger fireLocationEnabledNotification = 0;
     }
 }
 
--(PFGeoPoint*)getDefaultPosition
+-(CLLocation*)getDefaultPosition
 {
-    return [PFGeoPoint geoPointWithLatitude:37.7750 longitude:-122.4183];
+    return [[CLLocation alloc] initWithLatitude:37.7750 longitude:-122.4183];
 }
 
--(PFGeoPoint*)getPosition
+-(CLLocation*)getPosition
 {
     return geoPoint;
 }

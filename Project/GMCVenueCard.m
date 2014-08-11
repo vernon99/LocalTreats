@@ -46,10 +46,10 @@
     [_venueMap setUserInteractionEnabled:NO];
     
     // Set map region
-    double userLat = locManager.getPosition.latitude;
-    double userLon = locManager.getPosition.longitude;
-    double venueLat = venue.venueLocation.latitude;
-    double venueLon = venue.venueLocation.longitude;
+    double userLat = locManager.getPosition.coordinate.latitude;
+    double userLon = locManager.getPosition.coordinate.longitude;
+    double venueLat = venue.venueLocation.coordinate.latitude;
+    double venueLon = venue.venueLocation.coordinate.longitude;
     MKCoordinateSpan locationSpan;
     locationSpan.latitudeDelta = fabs(venueLat - userLat);
     locationSpan.longitudeDelta = fabs(venueLon - userLon);
@@ -65,7 +65,7 @@
     //}
     [_venueMap setRegion:region animated:YES];
     MKPointAnnotation* annotation = [[MKPointAnnotation alloc] init];
-    annotation.coordinate = CLLocationCoordinate2DMake(venue.venueLocation.latitude, venue.venueLocation.longitude);
+    annotation.coordinate = venue.venueLocation.coordinate;
     [_venueMap addAnnotation:annotation];
     
     // Images
@@ -214,8 +214,7 @@
     if (mapItemClass && [mapItemClass respondsToSelector:@selector(openMapsWithItems:launchOptions:)])
     {
         // Create an MKMapItem to pass to the Maps app
-        CLLocationCoordinate2D coordinate =
-        CLLocationCoordinate2DMake(_venue.venueLocation.latitude, _venue.venueLocation.longitude);
+        CLLocationCoordinate2D coordinate = _venue.venueLocation.coordinate;
         MKPlacemark *placemark = [[MKPlacemark alloc] initWithCoordinate:coordinate
                                                        addressDictionary:nil];
         MKMapItem *mapItem = [[MKMapItem alloc] initWithPlacemark:placemark];

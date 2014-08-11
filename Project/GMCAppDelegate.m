@@ -27,8 +27,6 @@ static NSDictionary* notificationData = nil;
     }
     
     // Parse and crashlytics
-    [Parse setApplicationId:@"Xd2Y10TTxXQdcxPbLoGdssuxDJvT9OB0b0k0oXa9"
-                  clientKey:@"1QWN3AlI0iZaCGJsHpx5BxrhYI437cbDr1eOzYX8"];
     [Crashlytics startWithAPIKey:@"05bf10b64dd5e5dbbe55dfb384d01abad7bba586"];
     
     // Navigation controller
@@ -40,9 +38,6 @@ static NSDictionary* notificationData = nil;
     
     // Launch notification
     notificationData = launchOptions[UIApplicationLaunchOptionsRemoteNotificationKey];
-    
-    // Analytics
-    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     
     // Flurry
     [Flurry startSession:@"HKDB46NF9PBQGFSFH8WK"];

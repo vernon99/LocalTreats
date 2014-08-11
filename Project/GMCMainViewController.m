@@ -297,7 +297,7 @@ static CGPoint venueCardPosition = {0, 30};
         }
         else
         {
-            _statusLabel.text = @"There's nothing worth your attention in the nearest radius of 5km. And yes, we won't show you nearest McDonalds or Starbucks, sorry.";
+            _statusLabel.text = @"There's nothing worth your attention in 5km radius. Note that we won't show you nearest Starbucks. Swipe down to get back.";
         }
     }
     else

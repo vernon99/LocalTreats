@@ -22,24 +22,6 @@
 }
 
 
-/*+(id) venueWithData:(PFObject*)data
-{
-    return [[GMCVenue alloc] initWithData:data];
-}
-
--(id) initWithData:(PFObject*)data
-{
-    if (self = [super init]) {
-        _data = data;
-        _venueId = [data objectForKey:@"venueId"];
-        _venueName = [data objectForKey:@"venueName"];
-        _venueAddress = [data objectForKey:@"venueAddress"];
-        _venueLocation = [data objectForKey:@"venueLocation"];
-    }
-    
-    return self;
-}*/
-
 +(id) venueWithFSVenue:(NSDictionary*)venue
 {
     return [[GMCVenue alloc] initWithFSVenue:venue];
@@ -131,34 +113,12 @@
             _venueCity = [location objectForKey:@"city"];
             NSNumber* lat = [location objectForKey:@"lat"];
             NSNumber* lon = [location objectForKey:@"lng"];
-            _venueLocation = [PFGeoPoint geoPointWithLatitude:[lat doubleValue] longitude:[lon doubleValue]];
-            
-            CLLocation *l1 = [[CLLocation alloc]initWithLatitude:[lat floatValue] longitude:[lon floatValue]];
-            CLLocation *l2 = [[CLLocation alloc]initWithLatitude:locManager.getPosition.latitude longitude:locManager.getPosition.longitude];
-            _venueDistance = [NSNumber numberWithDouble:[l1 distanceFromLocation:l2]/1000.0];
+            _venueLocation = [[CLLocation alloc] initWithLatitude:[lat doubleValue] longitude:[lon doubleValue]];
+            _venueDistance = [NSNumber numberWithDouble:[_venueLocation distanceFromLocation:locManager.getPosition]/1000.0];
         }
     }
     
     return self;
 }
-
--(BOOL) save:(id)target selector:(SEL)selector
-{
-    // TODO
-    return FALSE;
-}
-
--(BOOL) isSaved
-{
-    return (_data && _data.updatedAt != nil);
-}
-
--(NSDate*) dateCreated
-{
-    if ( ! _data )
-        return nil;
-    return _data.createdAt;
-}
-
 
 @end

@@ -12,16 +12,14 @@
 
 #define locManager [GMCLocationManager sharedInstance]
 
-static float const GMCLocationUpdateKilometers = 0.5;
+static CLLocationDistance const GMCLocationUpdateMeters = 500.0;
 static NSString* const kLocationUpdated = @"kLocationUpdated";
-
-@class PFGeoPoint;
 
 @interface GMCLocationManager : NSObject <CLLocationManagerDelegate>
 {
-    CLLocationManager*  locationManager;
-    PFGeoPoint          *geoPoint;
-    PFGeoPoint          *geoPointOld;
+    CLLocationManager*   locationManager;
+    CLLocation*          geoPoint;
+    CLLocation*          geoPointOld;
 }
 
 + (GMCLocationManager*)sharedInstance;
@@ -29,8 +27,8 @@ static NSString* const kLocationUpdated = @"kLocationUpdated";
 @property (nonatomic, retain) CLLocationManager* locationManager;
 
 -(void)startUpdating;
--(PFGeoPoint*)getPosition;
--(PFGeoPoint*)getDefaultPosition;
+-(CLLocation*)getPosition;
+-(CLLocation*)getDefaultPosition;
 -(Boolean) getLocationStatus;
 
 @end

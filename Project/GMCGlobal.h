@@ -1,13 +1,12 @@
 //
 //  GMCGlobal.h
-//  GimmeCoffee
+//  LocalTreats
 //
 //  Created by Mikhail Larionov on 3/01/14.
 //
 //
 
 #import <Foundation/Foundation.h>
-#import <Parse/Parse.h>
 #import "TestFlight.h"
 
 #undef NSLog
@@ -15,7 +14,6 @@
 
 #define globalVariables [LFDGlobal sharedInstance]
 
-#define currentUserData [PFUser currentUser]
 #define isCurrentUserAdmin [globalVariables isUserAdmin]
 
 // App store path
@@ -39,7 +37,6 @@
 - (void)setNewUser;
 
 - (NSNumber*)currentVersion;
-- (PFGeoPoint*) currentLocation;
 
 - (void)setLoaded;
 - (void)setUnloaded;

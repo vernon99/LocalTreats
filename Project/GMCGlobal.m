@@ -1,13 +1,12 @@
 //
 //  GMCGlobal.m
-//  GimmeCoffee
+//  LocalTreats
 //
 //  Created by Mikhail Larionov on 3/01/14.
 //
 //
 
 #import "GMCGlobal.h"
-#import <Parse/Parse.h>
 #import "GMCLocationManager.h"
 
 @implementation LFDGlobal
@@ -61,22 +60,6 @@ static LFDGlobal *sharedInstance = nil;
 {
     NSString* strData = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     return [NSNumber numberWithFloat:[strData floatValue]];
-}
-
-- (PFGeoPoint*) currentLocation
-{
-    // Get current position
-    PFGeoPoint* ptUser = [locManager getPosition];
-    
-    // Get last saved position
-    if ( ! ptUser && currentUserData )
-        ptUser = [currentUserData objectForKey:@"location"];
-    
-    // Get default position
-    if ( ! ptUser )
-        ptUser = [locManager getDefaultPosition];
-    
-    return ptUser;
 }
 
 - (void)setGlobalSettings:(NSDictionary*)settings

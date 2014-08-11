@@ -83,9 +83,16 @@ static NSMutableArray* treatsResult = nil;
 
 -(void) loadVenueListByType:(GMCQueryType)type withTarget:(id)target andSelector:(SEL)callback
 {
-    PFGeoPoint* location = locManager.getPosition;
-    NSNumber* latitude = @(location.latitude);
-    NSNumber* longitude = @(location.longitude);
+    CLLocation* location = locManager.getPosition;
+    if ( ! location )
+    {
+        NSLog(@"Error: no location provided for venue loader!");
+        [target performSelector:callback withObject:nil];
+        return;
+    }
+    
+    NSNumber* latitude = @(location.coordinate.latitude);
+    NSNumber* longitude = @(location.coordinate.longitude);
     NSString* section;
     NSString* query = nil;
     switch (type)

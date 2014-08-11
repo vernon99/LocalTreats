@@ -5,40 +5,46 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>69B848C8-7D62-4085-A3AE-9566D4946AC4</string>
+	<string>67C4AAF1-EB83-4E12-90C1-25027A867944</string>
 	<key>IDESourceControlProjectName</key>
 	<string>LocalTreats</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2915B17F-7CBE-4C27-99F1-8D08510711D0</key>
-		<string>https://github.com/Shimbo/LocalTreats.git</string>
+		<key>3E1E5797-981F-420B-B517-CA70AEB68AE0</key>
+		<string>https://github.com/Constantine-Fry/Foursquare-API-v2</string>
+		<key>5D5425E4-1527-4F5D-A7B6-1D110E54E1EB</key>
+		<string>https://github.com/Constantine-Fry/CFAsyncImageView</string>
+		<key>6205E271-F65E-4459-821F-9906BB40C9FC</key>
+		<string>https://github.com/vernon99/Extended-UI</string>
+		<key>CA34E403-A0D5-456A-8BAD-442B601828D7</key>
+		<string>https://github.com/vernon99/LocalTreats.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>LocalTreats.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2915B17F-7CBE-4C27-99F1-8D08510711D0</key>
-		<string>../..</string>
-		<key>32FA74C4-27BE-4B8F-8455-6C447A5CAB41</key>
+		<key>3E1E5797-981F-420B-B517-CA70AEB68AE0</key>
 		<string>../../externals/Foursquare</string>
-		<key>4B8B23CF-F65E-41FF-B2A3-7A262E379AA1</key>
+		<key>5D5425E4-1527-4F5D-A7B6-1D110E54E1EB</key>
 		<string>../../externals/AsyncImageView</string>
-		<key>D48D993E-3ACA-4041-B9BB-BFE11D124E1C</key>
+		<key>6205E271-F65E-4459-821F-9906BB40C9FC</key>
 		<string>../../externals/Extended-UI</string>
+		<key>CA34E403-A0D5-456A-8BAD-442B601828D7</key>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Shimbo/LocalTreats.git</string>
+	<string>https://github.com/vernon99/LocalTreats.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2915B17F-7CBE-4C27-99F1-8D08510711D0</string>
+	<string>CA34E403-A0D5-456A-8BAD-442B601828D7</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>4B8B23CF-F65E-41FF-B2A3-7A262E379AA1</string>
+			<string>5D5425E4-1527-4F5D-A7B6-1D110E54E1EB</string>
 			<key>IDESourceControlWCCName</key>
 			<string>AsyncImageView</string>
 		</dict>
@@ -46,7 +52,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D48D993E-3ACA-4041-B9BB-BFE11D124E1C</string>
+			<string>6205E271-F65E-4459-821F-9906BB40C9FC</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Extended-UI</string>
 		</dict>
@@ -54,7 +60,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>32FA74C4-27BE-4B8F-8455-6C447A5CAB41</string>
+			<string>3E1E5797-981F-420B-B517-CA70AEB68AE0</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Foursquare</string>
 		</dict>
@@ -62,7 +68,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2915B17F-7CBE-4C27-99F1-8D08510711D0</string>
+			<string>CA34E403-A0D5-456A-8BAD-442B601828D7</string>
 			<key>IDESourceControlWCCName</key>
 			<string>LocalTreats</string>
 		</dict>

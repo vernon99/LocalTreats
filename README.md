@@ -19,8 +19,8 @@ Required SDKs
 ====
 Expected to be in ../_Frameworks:
 * Flurry SDK
-* Facebook iOS SDK
 * TestFlight SDK
+Also, Crashlytics by default was put in the root project folder.
 
 Externals:
 ====

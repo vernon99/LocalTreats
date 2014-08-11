@@ -7,13 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface GMCVenue : NSObject
 {
     // Main object
-    PFObject*   _data;
-    BOOL        _isSaving;
-    
     GMCQueryType    _venueCategory;
     
     // Specific fields
@@ -23,7 +21,7 @@
     NSString*   _venueAddress;
     NSString*   _venueAddressTip;
     NSString*   _venueCity;
-    PFGeoPoint* _venueLocation;
+    CLLocation* _venueLocation;
     NSNumber*   _venueRating;
     NSNumber*   _hereNowCount;
     NSNumber*   _priceTier;
@@ -36,7 +34,6 @@
     NSInteger   _currentPhotoNumber;
 }
 
-@property (readonly) PFObject* data;
 @property (readonly) BOOL isSaving;
 
 @property (readwrite) GMCQueryType  venueCategory;
@@ -47,7 +44,7 @@
 @property (readonly) NSString*      venueAddress;
 @property (readonly) NSString*      venueAddressTip;
 @property (readonly) NSString*      venueCity;
-@property (readonly) PFGeoPoint*    venueLocation;
+@property (readonly) CLLocation*    venueLocation;
 @property (readonly) NSNumber*      venueRating;
 @property (readonly) NSNumber*      hereNowCount;
 @property (readonly) NSNumber*      priceTier;
@@ -59,11 +56,6 @@
 @property (readwrite) NSArray*      photoUrls;
 @property (readwrite) NSInteger     currentPhotoNumber;
 
-//+(id) venueWithData:(PFObject*)data;
 +(id) venueWithFSVenue:(NSDictionary*)venue;
-
--(BOOL) save:(id)target selector:(SEL)selector;
--(BOOL) isSaved;
--(NSDate*) dateCreated;
 
 @end

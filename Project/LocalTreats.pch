@@ -1,5 +1,5 @@
 //
-// Prefix header for all source files of the 'ParseStarterProject' target in the 'ParseStarterProject' project
+// Prefix header for all source
 //
 
 #import <Availability.h>
@@ -10,7 +10,6 @@
 
 #ifdef __OBJC__
     #import <UIKit/UIKit.h>
-    #import <Parse/Parse.h>
     #import <Foundation/Foundation.h>
     #import "MLUIDefinitions.h"
     #import "MLUIColor+HexColor.h"
