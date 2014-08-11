@@ -1,3 +1,5 @@
+[![Stories in Ready](https://badge.waffle.io/vernon99/Localtreats.png?label=ready&title=Ready)](https://waffle.io/vernon99/Localtreats)
+[![Stories in In Progress](https://badge.waffle.io/vernon99/Localtreats.png?label=in%20progress&title=In Progress)](https://waffle.io/vernon99/Localtreats)
 Intro
 ====
 
