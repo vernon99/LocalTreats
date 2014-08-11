@@ -7,6 +7,12 @@ LocalTreats - Foursquare replacement
 * Four main categories: coffee, lunch, drinks, treats
 * Uses cards to represent venues, swipe to scroll
 
+Examples
+====
+
+![Screenshot1](Screenshots/Screenshot01.png?raw=true)
+![Screenshot2](Screenshots/Screenshot02.jpg?raw=true)
+
 Required SDKs
 ====
 Expected to be in ../_Frameworks:
