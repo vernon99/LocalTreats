@@ -16,8 +16,8 @@
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "09ABC06C13A1D52D009C3FCF"
                BuildableName = "GimmeCoffee.app"
-               BlueprintName = "GimmeCoffee"
-               ReferencedContainer = "container:GimmeCoffee.xcodeproj">
+               BlueprintName = "LocalTreats"
+               ReferencedContainer = "container:LocalTreats.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -34,8 +34,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "09ABC06C13A1D52D009C3FCF"
             BuildableName = "GimmeCoffee.app"
-            BlueprintName = "GimmeCoffee"
-            ReferencedContainer = "container:GimmeCoffee.xcodeproj">
+            BlueprintName = "LocalTreats"
+            ReferencedContainer = "container:LocalTreats.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -53,8 +53,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "09ABC06C13A1D52D009C3FCF"
             BuildableName = "GimmeCoffee.app"
-            BlueprintName = "GimmeCoffee"
-            ReferencedContainer = "container:GimmeCoffee.xcodeproj">
+            BlueprintName = "LocalTreats"
+            ReferencedContainer = "container:LocalTreats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,8 +75,8 @@
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "09ABC06C13A1D52D009C3FCF"
             BuildableName = "GimmeCoffee.app"
-            BlueprintName = "GimmeCoffee"
-            ReferencedContainer = "container:GimmeCoffee.xcodeproj">
+            BlueprintName = "LocalTreats"
+            ReferencedContainer = "container:LocalTreats.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
