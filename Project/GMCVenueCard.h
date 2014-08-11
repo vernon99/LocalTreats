@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "GMCVenue.h"
 #import <MapKit/MapKit.h>
-#import "AsyncImageView.h"
+#import "CFAsyncImageView.h"
 
 @interface GMCVenueCard : UIView
 {
@@ -25,8 +25,8 @@
     IBOutlet UILabel *_venueHereNow;
     IBOutlet UILabel *_venuePrice;
     IBOutlet MKMapView *_venueMap;
-    IBOutlet AsyncImageView *_venuePhoto;
-    IBOutlet AsyncImageView *_venueIcon;
+    IBOutlet CFAsyncImageView *_venuePhoto;
+    IBOutlet CFAsyncImageView *_venueIcon;
     IBOutlet UIActivityIndicatorView *_venuePhotoIndicator;
     IBOutlet UILabel *_venueDistance;
     

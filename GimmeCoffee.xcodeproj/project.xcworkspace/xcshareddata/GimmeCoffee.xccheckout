@@ -5,40 +5,70 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>FB157423-4069-457C-B45A-DEB8A00CA1E0</string>
+	<string>C32F8EA9-9BCD-4414-BB28-7F978EE9F1E7</string>
 	<key>IDESourceControlProjectName</key>
 	<string>GimmeCoffee</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>2915B17F-7CBE-4C27-99F1-8D08510711D0</key>
+		<string>https://github.com/Shimbo/LocalTreats.git</string>
 		<key>898E0BE1-7FB3-4014-AB5D-2D6707BB20CA</key>
 		<string>https://github.com/Shimbo/UnitedLibs.git</string>
-		<key>C83198DC-28DE-42FE-8D43-E5A60861E87A</key>
-		<string>https://github.com/Shimbo/GimmeCoffee.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>GimmeCoffee.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>2915B17F-7CBE-4C27-99F1-8D08510711D0</key>
+		<string>../..</string>
+		<key>32FA74C4-27BE-4B8F-8455-6C447A5CAB41</key>
+		<string>../../externals/Foursquare</string>
+		<key>4B8B23CF-F65E-41FF-B2A3-7A262E379AA1</key>
+		<string>../../externals/AsyncImageView</string>
 		<key>898E0BE1-7FB3-4014-AB5D-2D6707BB20CA</key>
 		<string>../../../UnitedLibs</string>
-		<key>C83198DC-28DE-42FE-8D43-E5A60861E87A</key>
-		<string>../..</string>
+		<key>D48D993E-3ACA-4041-B9BB-BFE11D124E1C</key>
+		<string>../../externals/Extended-UI</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/Shimbo/GimmeCoffee.git</string>
+	<string>https://github.com/Shimbo/LocalTreats.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>C83198DC-28DE-42FE-8D43-E5A60861E87A</string>
+	<string>2915B17F-7CBE-4C27-99F1-8D08510711D0</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>C83198DC-28DE-42FE-8D43-E5A60861E87A</string>
+			<string>4B8B23CF-F65E-41FF-B2A3-7A262E379AA1</string>
 			<key>IDESourceControlWCCName</key>
-			<string>GimmeCoffee</string>
+			<string>AsyncImageView</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D48D993E-3ACA-4041-B9BB-BFE11D124E1C</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Extended-UI</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>32FA74C4-27BE-4B8F-8455-6C447A5CAB41</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Foursquare</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2915B17F-7CBE-4C27-99F1-8D08510711D0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LocalTreats</string>
 		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>

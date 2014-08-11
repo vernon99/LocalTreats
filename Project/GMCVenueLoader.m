@@ -9,7 +9,7 @@
 #import "GMCVenueLoader.h"
 #import "Foursquare2.h"
 #import "GMCVenue.h"
-#import "ULLocationManager.h"
+#import "GMCLocationManager.h"
 
 @implementation GMCVenueLoader
 

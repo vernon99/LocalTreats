@@ -12,8 +12,10 @@
     #import <UIKit/UIKit.h>
     #import <Parse/Parse.h>
     #import <Foundation/Foundation.h>
+    #import "MLUIDefinitions.h"
+    #import "MLUIColor+HexColor.h"
+    #import "MLUIView+Coordinates.h"
     #import "GMCGlobal.h"
-    #import "ULUIDefs.h"
     #import "GMCParams.h"
 #endif
 

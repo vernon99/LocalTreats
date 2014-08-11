@@ -8,7 +8,7 @@
 
 #import "GMCGlobal.h"
 #import <Parse/Parse.h>
-#import "ULLocationManager.h"
+#import "GMCLocationManager.h"
 
 @implementation LFDGlobal
 

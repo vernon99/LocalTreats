@@ -8,7 +8,7 @@
 //
 
 #import "GMCVenue.h"
-#import "ULLocationManager.h"
+#import "GMCLocationManager.h"
 
 @implementation GMCVenue
 

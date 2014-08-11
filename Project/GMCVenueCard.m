@@ -7,7 +7,7 @@
 //
 
 #import "GMCVenueCard.h"
-#import "ULLocationManager.h"
+#import "GMCLocationManager.h"
 #import "GMCVenueLoader.h"
 
 @implementation GMCVenueCard

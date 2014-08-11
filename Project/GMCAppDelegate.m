@@ -1,7 +1,7 @@
 
 #import "GMCAppDelegate.h"
 #import "GMCMainViewController.h"
-#import "ULLocationManager.h"
+#import "GMCLocationManager.h"
 #import <Crashlytics/Crashlytics.h>
 #import "Flurry.h"
 
@@ -25,11 +25,6 @@ static NSDictionary* notificationData = nil;
     @catch (NSException *exception) {
         NSLog(@"TestFlight error: %@",exception);
     }
-    
-    // Image cache
-    self.imageCache = [[JMImageCache alloc]init];
-    [self.imageCache setCountLimit:150];
-    [self.imageCache cleanCache];
     
     // Parse and crashlytics
     [Parse setApplicationId:@"Xd2Y10TTxXQdcxPbLoGdssuxDJvT9OB0b0k0oXa9"
@@ -76,7 +71,7 @@ static NSDictionary* notificationData = nil;
 -(void)applicationDidReceiveMemoryWarning:(UIApplication *)application{
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.imageCache applicationDidReceiveMemoryWarning];
+            [CFAsyncImageView applicationDidReceiveMemoryWarning];
             NSLog(@"cleaned");
         });
     });

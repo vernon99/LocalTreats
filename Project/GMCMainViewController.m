@@ -9,7 +9,7 @@
 #import "GMCMainViewController.h"
 #import "GMCVenueLoader.h"
 #import "GMCVenueCard.h"
-#import "ULLocationManager.h"
+#import "GMCLocationManager.h"
 
 static CGPoint venueCardPosition = {0, 30};
 

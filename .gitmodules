@@ -1,0 +1,9 @@
+[submodule "externals/Extended-UI"]
+	path = externals/Extended-UI
+	url = https://github.com/vernon99/Extended-UI
+[submodule "externals/Foursquare"]
+	path = externals/Foursquare
+	url = https://github.com/Constantine-Fry/Foursquare-API-v2
+[submodule "externals/AsyncImageView"]
+	path = externals/AsyncImageView
+	url = https://github.com/Constantine-Fry/CFAsyncImageView
