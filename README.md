@@ -11,7 +11,7 @@ Examples
 ====
 
 ![Screenshot1](Screenshots/Screenshot01.png?raw=true)
-![Screenshot2](Screenshots/Screenshot02.jpg?raw=true)
+![Screenshot2](Screenshots/Screenshot02.png?raw=true)
 
 Required SDKs
 ====
