@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>B87DA7E9-4630-44C5-B783-1FAB4E1AC151</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LocalTreats</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>5D5425E4-1527-4F5D-A7B6-1D110E54E1EB</key>
+		<string>https://github.com/Constantine-Fry/CFAsyncImageView</string>
+		<key>6205E271-F65E-4459-821F-9906BB40C9FC</key>
+		<string>https://github.com/vernon99/Extended-UI</string>
+		<key>CA34E403-A0D5-456A-8BAD-442B601828D7</key>
+		<string>https://github.com/vernon99/LocalTreats.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LocalTreats.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>5D5425E4-1527-4F5D-A7B6-1D110E54E1EB</key>
+		<string>../externals/AsyncImageView</string>
+		<key>6205E271-F65E-4459-821F-9906BB40C9FC</key>
+		<string>../externals/Extended-UI</string>
+		<key>CA34E403-A0D5-456A-8BAD-442B601828D7</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vernon99/LocalTreats.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CA34E403-A0D5-456A-8BAD-442B601828D7</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>5D5425E4-1527-4F5D-A7B6-1D110E54E1EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AsyncImageView</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6205E271-F65E-4459-821F-9906BB40C9FC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Extended-UI</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CA34E403-A0D5-456A-8BAD-442B601828D7</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LocalTreats</string>
+		</dict>
+	</array>
+</dict>
+</plist>

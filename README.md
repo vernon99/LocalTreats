@@ -23,11 +23,11 @@ Expected to be in ../_Frameworks:
 
 Also, Crashlytics by default was put in the root project folder.
 
-Externals:
+Externals and Pods
 ====
-* Foursquare wrapper by Constantine Fry
+* Foursquare wrapper by Constantine Fry (as CocoaPod)
 * AsyncImageView by Constantine Fry
-* Extended UI by me, Mikhail Larionov
+* Extended UI, Mikhail Larionov
 
 Contributing
 ====
